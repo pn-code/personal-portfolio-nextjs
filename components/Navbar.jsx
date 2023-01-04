@@ -5,24 +5,24 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState('white');
-    const [linkColor, setLinkColor] = useState('black')
+    const [navBg, setNavBg] = useState("white");
+    const [linkColor, setLinkColor] = useState("black");
     const router = useRouter();
 
     useEffect(() => {
-        if (router.asPath === '/sample_project') {
-            setNavBg('transparent')
-            setLinkColor('white')
+        if (router.asPath === "/sample_project") {
+            setNavBg("transparent");
+            setLinkColor("white");
         } else {
-            setNavBg('white');
-            setLinkColor('black')
+            setNavBg("white");
+            setLinkColor("black");
         }
-    },[])
+    }, []);
 
     const handleNav = () => {
         setNav((prevNav) => !prevNav);
@@ -41,7 +41,7 @@ const Navbar = () => {
 
     return (
         <div
-        style={{backgroundColor: `${navBg}`}}
+            style={{ backgroundColor: `${navBg}` }}
             className={
                 shadow
                     ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -59,7 +59,10 @@ const Navbar = () => {
                 </Link>
 
                 <div>
-                    <ul style={{color: `${linkColor}`}}className="hidden md:flex">
+                    <ul
+                        style={{ color: `${linkColor}` }}
+                        className="hidden md:flex"
+                    >
                         <li className="ml-10 text-sm uppercase hover:border-b">
                             <Link href="/">Home</Link>
                         </li>
@@ -117,23 +120,48 @@ const Navbar = () => {
                                 Let's build something together!
                             </p>
                         </div>
-                        
+
                         <div className="py-4 flex flex-col">
                             <ul className="uppercase">
                                 <Link href="/">
-                                    <li onClick={() => setNav(false)}className="py-4 text-sm ">Home</li>
+                                    <li
+                                        onClick={() => setNav(false)}
+                                        className="py-4 text-sm "
+                                    >
+                                        Home
+                                    </li>
                                 </Link>
                                 <Link href="/#about">
-                                    <li onClick={() => setNav(false)}className="py-4 text-sm">About</li>
+                                    <li
+                                        onClick={() => setNav(false)}
+                                        className="py-4 text-sm"
+                                    >
+                                        About
+                                    </li>
                                 </Link>
                                 <Link href="/#skills">
-                                    <li onClick={() => setNav(false)}className="py-4 text-sm">Skills</li>
+                                    <li
+                                        onClick={() => setNav(false)}
+                                        className="py-4 text-sm"
+                                    >
+                                        Skills
+                                    </li>
                                 </Link>
                                 <Link href="/#projects">
-                                    <li onClick={() => setNav(false)}className="py-4 text-sm">Projects</li>
+                                    <li
+                                        onClick={() => setNav(false)}
+                                        className="py-4 text-sm"
+                                    >
+                                        Projects
+                                    </li>
                                 </Link>
                                 <Link href="/#contact">
-                                    <li onClick={() => setNav(false)}className="py-4 text-sm">Contact</li>
+                                    <li
+                                        onClick={() => setNav(false)}
+                                        className="py-4 text-sm"
+                                    >
+                                        Contact
+                                    </li>
                                 </Link>
                             </ul>
                             <div className="pt-40">
@@ -142,16 +170,40 @@ const Navbar = () => {
                                 </p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                        <FaLinkedinIn />
+                                        <a
+                                            href="https://www.linkedin.com/in/philip-nguyen-92b6671b0/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <FaLinkedinIn />
+                                        </a>
                                     </div>
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                        <FaGithub />
+                                        <a
+                                            href="https://github.com/pn-code"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <FaGithub />
+                                        </a>
                                     </div>
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                        <AiOutlineMail />
+                                        <a
+                                            href=""
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <AiOutlineMail />
+                                        </a>
                                     </div>
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                        <BsFillPersonLinesFill />
+                                        <a
+                                            href="/resume"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <BsFillPersonLinesFill />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

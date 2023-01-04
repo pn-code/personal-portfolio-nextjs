@@ -36,17 +36,41 @@ const Contact = () => {
                                         Connect With Me
                                     </p>
                                     <div className="flex items-center justify-between py-4">
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300">
-                                            <FaLinkedinIn />
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <a
+                                                href="https://www.linkedin.com/in/philip-nguyen-92b6671b0/"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <FaLinkedinIn />
+                                            </a>
                                         </div>
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300">
-                                            <FaGithub />
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <a
+                                                href="https://github.com/pn-code"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <FaGithub />
+                                            </a>
                                         </div>
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300">
-                                            <AiOutlineMail />
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <a
+                                                href=""
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <AiOutlineMail />
+                                            </a>
                                         </div>
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300">
-                                            <BsFillPersonLinesFill />
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <a
+                                                href="/resume"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <BsFillPersonLinesFill />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +169,10 @@ const Contact = () => {
                 <div className="flex justify-center py-12">
                     <Link href="/">
                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                            <HiOutlineChevronDoubleUp className="m-auto text-[#3855b6]" size={30}/>
+                            <HiOutlineChevronDoubleUp
+                                className="m-auto text-[#3855b6]"
+                                size={30}
+                            />
                         </div>
                     </Link>
                 </div>
