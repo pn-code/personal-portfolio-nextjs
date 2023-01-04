@@ -10,16 +10,16 @@ import { useRouter } from "next/router";
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState("white");
+    const [navBg, setNavBg] = useState("#f6f6f6");
     const [linkColor, setLinkColor] = useState("black");
     const router = useRouter();
 
     useEffect(() => {
         if (router.asPath === "/sample_project") {
             setNavBg("transparent");
-            setLinkColor("white");
+            setLinkColor("#f6f6f6");
         } else {
-            setNavBg("white");
+            setNavBg("#f6f6f6");
             setLinkColor("black");
         }
     }, []);

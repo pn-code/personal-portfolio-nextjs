@@ -25,7 +25,6 @@ const Skills = () => {
                                 <h3>HTML</h3>
                             </div>
                         </div>
-                        
                     </div>
 
                     <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">

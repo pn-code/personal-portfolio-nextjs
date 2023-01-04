@@ -143,8 +143,8 @@ const Contact = () => {
                                             type="text"
                                         />
                                     </div>
-
-                                    <div className="flex flex-col py-2">
+                                </div>
+                                <div className="flex flex-col py-2">
                                         <label
                                             className="uppercase text-sm py-2"
                                             htmlFor="message"
@@ -158,7 +158,6 @@ const Contact = () => {
                                             name="message"
                                         ></textarea>
                                     </div>
-                                </div>
                                 <button className="w-full p-4 text-gray-100 mt-4">
                                     Send Message
                                 </button>
