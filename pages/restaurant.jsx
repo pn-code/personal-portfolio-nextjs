@@ -12,7 +12,7 @@ const Restaurant = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/restaurant/product.png"
+                    src="/../public/assets/projects/restaurant-preview.png"
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -44,6 +44,28 @@ const Restaurant = () => {
                         Last, but not least, admins are also able to add new
                         products/menu items in the menu section of the app.
                     </p>
+                    {/* Images Container */}
+                    <div className="mt-5">
+                        <Image
+                            width={800}
+                            height={800}
+                            src="/../public/assets/projects/restaurant-main.png"
+                            alt="/"
+                        />
+                        <Image
+                            width={800}
+                            height={800}
+                            src="/../public/assets/projects/restaurant-menu.png"
+                            alt="/"
+                        />
+                        <Image
+                            width={800}
+                            height={800}
+                            objectFit="cover"
+                            src="/../public/assets/projects/restaurant-preview.png"
+                            alt="/"
+                        />
+                    </div>
                     <a
                         href="https://github.com/pn-code/restaurant-app"
                         target="_blank"
