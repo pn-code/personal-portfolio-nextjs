@@ -36,42 +36,45 @@ const Contact = () => {
                                         Connect With Me
                                     </p>
                                     <div className="flex items-center justify-between py-4">
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                            <a
-                                                href="https://www.linkedin.com/in/philip-nguyen-92b6671b0/"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
+                                        <a
+                                            href="https://www.linkedin.com/in/philip-nguyen-92b6671b0/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <FaLinkedinIn />
-                                            </a>
-                                        </div>
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                            <a
-                                                href="https://github.com/pn-code"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="https://github.com/pn-code"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <FaGithub />
-                                            </a>
-                                        </div>
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                            <a
-                                                href=""
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="mailto:philipnguyen953@gmail.com"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <AiOutlineMail />
-                                            </a>
-                                        </div>
-                                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                            <a
-                                                href="/resume"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="/resume"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <BsFillPersonLinesFill />
-                                            </a>
-                                        </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -145,19 +148,19 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col py-2">
-                                        <label
-                                            className="uppercase text-sm py-2"
-                                            htmlFor="message"
-                                        >
-                                            Message:
-                                        </label>
-                                        <textarea
-                                            className="border-2 rounded-lg p-3 flex border-gray-400 resize-none"
-                                            rows={10}
-                                            id="message"
-                                            name="message"
-                                        ></textarea>
-                                    </div>
+                                    <label
+                                        className="uppercase text-sm py-2"
+                                        htmlFor="message"
+                                    >
+                                        Message:
+                                    </label>
+                                    <textarea
+                                        className="border-2 rounded-lg p-3 flex border-gray-400 resize-none"
+                                        rows={10}
+                                        id="message"
+                                        name="message"
+                                    ></textarea>
+                                </div>
                                 <button className="w-full p-4 text-gray-100 mt-4">
                                     Send Message
                                 </button>
