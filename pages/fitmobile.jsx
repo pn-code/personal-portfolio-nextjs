@@ -12,7 +12,7 @@ const FitMobile = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/restaurant/product.png"
+                    src="/../public/assets/products/fit-preview.jpg"
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -25,14 +25,37 @@ const FitMobile = () => {
                 <div className="col-span-4">
                     <p>Fitness Mobile</p>
                     <h2 className="mb-5">Overview</h2>
-                    <p>
-                        A fitness app developed for mobile devices intended to track workouts and create exercise plans.
+                    <p className="mb-5">
+                        A fitness app developed for mobile devices intended to
+                        track workouts and create exercise plans.
                         <br />
                         <br />
-                        Featuring user authentication, an exercise journal that alows users to add and delete exercises,
-                        an exercise planner that allows users to create, view, and/or add exercise plans created by others.
+                        Featuring user authentication, an exercise journal that
+                        alows users to add and delete exercises, an exercise
+                        planner that allows users to create, view, and/or add
+                        exercise plans created by others.
                     </p>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <div>
+                        <Image
+                            src="/../public/assets/projects/fit-auth.png"
+                            alt="/"
+                            width={900}
+                            height={900}
+                        />
+                        <Image
+                            src="/../public/assets/projects/fit-preview.jpg"
+                            alt="/"
+                            width={900}
+                            height={900}
+                        />
+                        <Image
+                            src="/../public/assets/projects/fit-plans.jpg"
+                            alt="/"
+                            width={900}
+                            height={900}
+                        />
+                    </div>
+                    <a href="https://github.com/pn-code/fitness-mobile" target="_blank" rel="noreferrer">
                         <button className="px-8 py-2 mt-4 mr-8">Code</button>
                     </a>
                     <a href="" target="_blank" rel="noreferrer">
