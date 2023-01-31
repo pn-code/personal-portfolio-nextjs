@@ -44,7 +44,11 @@ const Restaurant = () => {
                         Last, but not least, admins are also able to add new
                         products/menu items in the menu section of the app.
                     </p>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a
+                        href="https://github.com/pn-code/restaurant-app"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <button className="px-8 py-2 mt-4 mr-8">Code</button>
                     </a>
                     <a href="" target="_blank" rel="noreferrer">
@@ -58,20 +62,21 @@ const Restaurant = () => {
                         </p>
                         <div className="grid grid-cols-3 md:grid-cols-1">
                             <p className="text-gray-600 py-2 flex items-center">
+                                <RiRadioButtonFill className="pr-2" /> NextJS
+                            </p>
+                            <p className="text-gray-600 py-2 flex items-center">
                                 <RiRadioButtonFill className="pr-2" /> React
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> Tailwind
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
                                 <RiRadioButtonFill className="pr-2" />
-                                Javascript
+                                Tailwind
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> Firebase
+                                <RiRadioButtonFill className="pr-2" /> MongoDB
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> APIs
+                                <RiRadioButtonFill className="pr-2" />{" "}
+                                JavaScript
                             </p>
                         </div>
                     </div>
