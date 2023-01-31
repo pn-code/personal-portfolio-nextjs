@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const sample_project = () => {
+const Restaurant = () => {
     return (
         <div className="w-full">
             <div className="w-screen h-[50vh] relative">
@@ -12,22 +12,37 @@ const sample_project = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/skills/html.png"
+                    src="/../public/assets/restaurant/product.png"
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-                    <h2 className="py-2">Sample Project</h2>
-                    <h3>Technologies used to build this application here.</h3>
+                    <h2 className="py-2">Restaurant App</h2>
+                    <h3>NextJS / MongoDB</h3>
                 </div>
             </div>
 
             <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
                 <div className="col-span-4">
-                    <p>Project</p>
-                    <h2>Overview</h2>
+                    <p>Restaurant App</p>
+                    <h2 className="mb-5">Overview</h2>
                     <p>
-                        This app is a blank state where information can be added
-                        in. Add description to this sample project.
+                        A restaurant app that allows online food orders.
+                        <br />
+                        <br />
+                        Featuring an image slider, menu, footer, product page,
+                        cart page, and order page where customers can choose
+                        between one of two ways to checkout.
+                        <br />
+                        <br />
+                        On top of that, there is a user login with admin
+                        permission that will allow workers to access the admin
+                        page, where the admin is able to keep track of products
+                        and orders. Admins are also able to delete and progress
+                        the status of orders.
+                        <br />
+                        <br />
+                        Last, but not least, admins are also able to add new
+                        products/menu items in the menu section of the app.
                     </p>
                     <a href="" target="_blank" rel="noreferrer">
                         <button className="px-8 py-2 mt-4 mr-8">Code</button>
@@ -36,7 +51,7 @@ const sample_project = () => {
                         <button className="px-8 py-2 mt-4">Demo</button>
                     </a>
                 </div>
-                <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+                <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 px-4">
                     <div className="p-2">
                         <p className="text-center font-bold pb-2">
                             Technologies
@@ -69,4 +84,4 @@ const sample_project = () => {
     );
 };
 
-export default sample_project;
+export default Restaurant;
