@@ -12,7 +12,7 @@ const FitMobile = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/products/fit-preview.jpg"
+                    src="/../public/assets/projects/fit-icon.jpg"
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -43,7 +43,7 @@ const FitMobile = () => {
                             height={900}
                         />
                         <Image
-                            src="/../public/assets/projects/fit-preview.jpg"
+                            src="/../public/assets/projects/fit-journal.jpg"
                             alt="/"
                             width={900}
                             height={900}
