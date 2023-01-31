@@ -1,9 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const ProjectItem = (props) => {
-    const { title, type, imgSrc, imgAlt, href } = props;
-
+const ProjectItem = ({ title, type, imgSrc, imgAlt, href }) => {
     return (
         <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#197cd8] to-[#273ea7]">
             <img
