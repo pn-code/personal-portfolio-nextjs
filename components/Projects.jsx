@@ -12,30 +12,23 @@ const Projects = () => {
                 <h2 className="py-4">What I've Built</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     <ProjectItem
-                        title="Sample Project"
-                        type="React"
-                        imgSrc={sampleProject}
+                        title="Restaurant App"
+                        type="NextJS"
+                        imgSrc="https://raw.githubusercontent.com/pn-code/restaurant-app/main/gh/menu.png"
                         imgAlt="/"
                         href="/"
                     />
                     <ProjectItem
-                        title="Sample Project"
-                        type="React"
-                        imgSrc={sampleProject}
+                        title="Instagram Clone"
+                        type="React / MERN Stack"
+                        imgSrc="https://raw.githubusercontent.com/pn-code/ig-clone/main/gh-preview/ig-clone-preview-1.png"
                         imgAlt="/"
                         href="/"
                     />
                     <ProjectItem
-                        title="Sample Project"
-                        type="React"
-                        imgSrc={sampleProject}
-                        imgAlt="/"
-                        href="/"
-                    />
-                    <ProjectItem
-                        title="Sample Project"
-                        type="React"
-                        imgSrc={sampleProject}
+                        title="Fitness Mobile"
+                        type="React Native / Firebase"
+                        imgSrc="https://raw.githubusercontent.com/pn-code/fitness-mobile/main/github/journal_screen.jpg"
                         imgAlt="/"
                         href="/"
                     />
