@@ -51,7 +51,7 @@ const Main = () => {
                             </div>
                         </a>
 
-                        <a href="/resume" target="_blank" rel="noreferrer">
+                        <a href="/assets/resume.pdf" target="_blank" rel="noreferrer">
                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                 <BsFillPersonLinesFill />
                             </div>
