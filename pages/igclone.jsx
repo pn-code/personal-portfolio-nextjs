@@ -12,7 +12,7 @@ const Igclone = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/restaurant/product.png"
+                    src="/../public/assets/projects/ig-logo.png"
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -34,6 +34,15 @@ const Igclone = () => {
                         Users can register, login, log out, create posts (post
                         image and captions), like posts, and comment on posts.
                     </p>
+                    {/* Display Images */}
+                    <div>
+                        <Image
+                            src="/../public/assets/projects/ig-preview.png"
+                            alt="/"
+                            width={900}
+                            height={900}
+                        />
+                    </div>
                     <a
                         href="https://github.com/pn-code/ig-clone"
                         target="_blank"
