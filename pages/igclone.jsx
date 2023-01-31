@@ -35,7 +35,7 @@ const Igclone = () => {
                         image and captions), like posts, and comment on posts.
                     </p>
                     {/* Display Images */}
-                    <div>
+                    <div className="flex flex-col gap-4 mb-5">
                         <Image
                             src="/../public/assets/projects/ig-preview.png"
                             alt="/"

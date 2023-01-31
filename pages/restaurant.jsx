@@ -25,7 +25,7 @@ const Restaurant = () => {
                 <div className="col-span-4">
                     <p>Restaurant App</p>
                     <h2 className="mb-5">Overview</h2>
-                    <p>
+                    <p className="mb-5">
                         A restaurant app that allows online food orders.
                         <br />
                         <br />
@@ -45,7 +45,7 @@ const Restaurant = () => {
                         products/menu items in the menu section of the app.
                     </p>
                     {/* Images Container */}
-                    <div className="mt-5">
+                    <div className="flex flex-col gap-4 mb-5">
                         <Image
                             width={800}
                             height={800}

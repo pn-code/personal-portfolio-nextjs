@@ -35,7 +35,7 @@ const FitMobile = () => {
                         planner that allows users to create, view, and/or add
                         exercise plans created by others.
                     </p>
-                    <div>
+                    <div className="flex flex-col gap-4 mb-5">
                         <Image
                             src="/../public/assets/projects/fit-auth.png"
                             alt="/"
