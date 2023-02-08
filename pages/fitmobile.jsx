@@ -31,7 +31,7 @@ const FitMobile = () => {
                         <br />
                         <br />
                         Featuring user authentication, an exercise journal that
-                        alows users to add and delete exercises, an exercise
+                        allows users to add and delete exercises, an exercise
                         planner that allows users to create, view, and/or add
                         exercise plans created by others.
                     </p>
@@ -69,20 +69,13 @@ const FitMobile = () => {
                         </p>
                         <div className="grid grid-cols-3 md:grid-cols-1">
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> React
+                                <RiRadioButtonFill className="pr-2" /> React Native
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> Tailwind
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" />
-                                Javascript
+                                <RiRadioButtonFill className="pr-2" /> Javascript
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
                                 <RiRadioButtonFill className="pr-2" /> Firebase
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> APIs
                             </p>
                         </div>
                     </div>
