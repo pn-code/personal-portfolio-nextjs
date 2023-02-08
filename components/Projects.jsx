@@ -10,6 +10,14 @@ const Projects = () => {
                 </p>
                 <h2 className="py-4">What I've Built</h2>
                 <div className="grid md:grid-cols-2 gap-8">
+                    {/* Add Latest Projects Here... */}
+                    <ProjectItem
+                        title="Fitness Mobile"
+                        type="React Native / Firebase"
+                        imgSrc="https://raw.githubusercontent.com/pn-code/fitness-mobile/main/github/journal_screen.jpg"
+                        imgAlt="/"
+                        href="/fitmobile"
+                    />
                     <ProjectItem
                         title="Restaurant App"
                         type="NextJS"
@@ -23,13 +31,6 @@ const Projects = () => {
                         imgSrc="https://raw.githubusercontent.com/pn-code/ig-clone/main/gh-preview/ig-clone-preview-1.png"
                         imgAlt="/"
                         href="/igclone"
-                    />
-                    <ProjectItem
-                        title="Fitness Mobile"
-                        type="React Native / Firebase"
-                        imgSrc="https://raw.githubusercontent.com/pn-code/fitness-mobile/main/github/journal_screen.jpg"
-                        imgAlt="/"
-                        href="/fitmobile"
                     />
                 </div>
             </div>
