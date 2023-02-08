@@ -26,13 +26,13 @@ const Contact = () => {
                             />
                             <div>
                                 <h2 className="py-2">Philip Nguyen</h2>
-                                <p>Full-Stack Developer</p>
+                                <p className="font-semibold">Full-Stack Developer</p>
                                 <p className="py-4">
                                     I am available for full-time positions.
                                     Contact me and let's talk.
                                 </p>
                                 <div>
-                                    <p className="uppercase pt-8">
+                                    <p className="uppercase pt-8 font-semibold">
                                         Connect With Me
                                     </p>
                                     <div className="flex items-center justify-between py-4">
@@ -42,7 +42,7 @@ const Contact = () => {
                                             rel="noreferrer"
                                         >
                                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                                <FaLinkedinIn />
+                                                <FaLinkedinIn size={24} />
                                             </div>
                                         </a>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                                             rel="noreferrer"
                                         >
                                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                                <FaGithub />
+                                                <FaGithub size={24} />
                                             </div>
                                         </a>
 
@@ -62,7 +62,7 @@ const Contact = () => {
                                             rel="noreferrer"
                                         >
                                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                                <AiOutlineMail />
+                                                <AiOutlineMail size={24} />
                                             </div>
                                         </a>
 
@@ -72,7 +72,9 @@ const Contact = () => {
                                             rel="noreferrer"
                                         >
                                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                                <BsFillPersonLinesFill />
+                                                <BsFillPersonLinesFill
+                                                    size={24}
+                                                />
                                             </div>
                                         </a>
                                     </div>
@@ -83,7 +85,9 @@ const Contact = () => {
 
                     {/* Right-side */}
                     <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-                        <h3 className="text-center text-2xl text-zinc-700">Contact Form</h3>
+                        <h3 className="text-center text-2xl text-zinc-700 mt-5">
+                            Contact Form
+                        </h3>
                         <div className="p-4">
                             <form>
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
