@@ -1,5 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
+import fitnessPreview from "../public/assets/projects/fitness-plan.png"
+import fitmobilePreview from "../public/assets/projects/fitmobile-preview.jpg"
+import restaurantPreview from "../public/assets/projects/restaurant-menu.png"
+import igClonePreview from "../public/assets/projects/ig-preview.png"
 
 const Projects = () => {
     return (
@@ -12,23 +16,30 @@ const Projects = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Add Latest Projects Here... */}
                     <ProjectItem
+                        title="Fitness App"
+                        type="ReactJS / MERN Stack"
+                        imgSrc={fitnessPreview}
+                        imgAlt="/"
+                        href="/fitness"
+                    />
+                    <ProjectItem
                         title="Fitness Mobile"
                         type="React Native / Firebase"
-                        imgSrc="https://raw.githubusercontent.com/pn-code/fitness-mobile/main/github/journal_screen.jpg"
+                        imgSrc={fitmobilePreview}
                         imgAlt="/"
                         href="/fitmobile"
                     />
                     <ProjectItem
                         title="Restaurant App"
                         type="NextJS"
-                        imgSrc="https://raw.githubusercontent.com/pn-code/restaurant-app/main/gh/menu.png"
+                        imgSrc={restaurantPreview}
                         imgAlt="/"
                         href="/restaurant"
                     />
                     <ProjectItem
                         title="Instagram Clone"
                         type="React / MERN Stack"
-                        imgSrc="https://raw.githubusercontent.com/pn-code/ig-clone/main/gh-preview/ig-clone-preview-1.png"
+                        imgSrc={igClonePreview}
                         imgAlt="/"
                         href="/igclone"
                     />
