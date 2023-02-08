@@ -33,4 +33,8 @@
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#197cd8] to-[#273ea7] text-white hover:shadow-gray-500 ease-in duration-300
   }
+
+  .navLink {
+    @apply ml-10 text-sm text-zinc-800 uppercase hover:border-b font-semibold border-zinc-900
+  }
 }

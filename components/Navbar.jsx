@@ -63,24 +63,27 @@ const Navbar = () => {
                         style={{ color: `${linkColor}` }}
                         className="hidden md:flex"
                     >
-                        <li className="ml-10 text-sm uppercase hover:border-b">
+                        <li className="navLink">
                             <Link href="/">Home</Link>
                         </li>
-                        <li className="ml-10 text-sm uppercase hover:border-b">
+                        <li className="navLink">
                             <Link href="/#about">About</Link>
                         </li>
-                        <li className="ml-10 text-sm uppercase hover:border-b">
+                        <li className="navLink">
                             <Link href="/#skills">Skills</Link>
                         </li>
-                        <li className="ml-10 text-sm uppercase hover:border-b">
+                        <li className="navLink">
                             <Link href="/#projects">Projects</Link>
                         </li>
-                        <li className="ml-10 text-sm uppercase hover:border-b">
+                        <li className="navLink">
                             <Link href="/#contact">Contact</Link>
                         </li>
                     </ul>
 
-                    <div className="md:hidden" onClick={handleNav}>
+                    <div
+                        className="md:hidden cursor-pointer"
+                        onClick={handleNav}
+                    >
                         <AiOutlineMenu size={25} />
                     </div>
                 </div>
@@ -126,7 +129,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm "
+                                        className="py-4 text-sm font-semibold text-zinc-700"
                                     >
                                         Home
                                     </li>
@@ -134,7 +137,7 @@ const Navbar = () => {
                                 <Link href="/#about">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm"
+                                        className="py-4 text-sm font-semibold text-zinc-700"
                                     >
                                         About
                                     </li>
@@ -142,7 +145,7 @@ const Navbar = () => {
                                 <Link href="/#skills">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm"
+                                        className="py-4 text-sm font-semibold text-zinc-700"
                                     >
                                         Skills
                                     </li>
@@ -150,7 +153,7 @@ const Navbar = () => {
                                 <Link href="/#projects">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm"
+                                        className="py-4 text-sm font-semibold text-zinc-700"
                                     >
                                         Projects
                                     </li>
@@ -158,7 +161,7 @@ const Navbar = () => {
                                 <Link href="/#contact">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm"
+                                        className="py-4 text-sm font-semibold text-zinc-700"
                                     >
                                         Contact
                                     </li>

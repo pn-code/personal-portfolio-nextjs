@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-                <p className="text-xl tracking-widest uppercase text-[#3855b6]">
+                <p className="text-xl tracking-widest uppercase text-[#3855b6] font-semibold">
                     Contact
                 </p>
                 <h2 className="py-4">Get In Touch</h2>
@@ -82,8 +82,8 @@ const Contact = () => {
                     </div>
 
                     {/* Right-side */}
-
                     <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+                        <h3 className="text-center text-2xl text-zinc-700">Contact Form</h3>
                         <div className="p-4">
                             <form>
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
