@@ -32,6 +32,7 @@ const Contact = () => {
                                 src="/../public/assets/skills/html.png"
                                 width={100}
                                 height={100}
+                                alt=""
                             />
                             <div>
                                 <h2 className="py-2">Philip Nguyen</h2>
@@ -40,7 +41,7 @@ const Contact = () => {
                                 </p>
                                 <p className="py-4">
                                     I am available for full-time positions.
-                                    Contact me and let's talk.
+                                    Contact me and let&apos;s talk.
                                 </p>
                                 <div>
                                     <p className="uppercase pt-8 font-semibold">
