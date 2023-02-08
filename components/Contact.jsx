@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
@@ -7,6 +7,15 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
+    const [name, setName] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
+    const canSendMessage = [name, phoneNumber, email, subject, message].every(Boolean)
+    console.log(canSendMessage)
+
     return (
         <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -26,7 +35,9 @@ const Contact = () => {
                             />
                             <div>
                                 <h2 className="py-2">Philip Nguyen</h2>
-                                <p className="font-semibold">Full-Stack Developer</p>
+                                <p className="font-semibold">
+                                    Full-Stack Developer
+                                </p>
                                 <p className="py-4">
                                     I am available for full-time positions.
                                     Contact me and let's talk.
@@ -103,6 +114,8 @@ const Contact = () => {
                                             id="name"
                                             name="name"
                                             type="text"
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)}
                                         />
                                     </div>
 
@@ -118,6 +131,8 @@ const Contact = () => {
                                             id="phone_number"
                                             name="phone_number"
                                             type="tel"
+                                            value={phoneNumber}
+                                            onChange={(e) => setPhoneNumber(e.target.value)}
                                         />
                                     </div>
 
@@ -133,6 +148,8 @@ const Contact = () => {
                                             id="email"
                                             name="email"
                                             type="email"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
                                         />
                                     </div>
 
@@ -148,6 +165,8 @@ const Contact = () => {
                                             id="subject"
                                             name="subject"
                                             type="text"
+                                            value={subject}
+                                            onChange={(e) => setSubject(e.target.value)}
                                         />
                                     </div>
                                 </div>
@@ -163,9 +182,11 @@ const Contact = () => {
                                         rows={10}
                                         id="message"
                                         name="message"
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
                                     ></textarea>
                                 </div>
-                                <button className="w-full p-4 text-gray-100 mt-4">
+                                <button disabled={!canSendMessage} className="w-full p-4 text-gray-100 mt-4 disabled:cursor-not-allowed disabled:bg-zinc-700">
                                     Send Message
                                 </button>
                             </form>
