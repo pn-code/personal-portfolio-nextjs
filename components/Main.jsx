@@ -22,7 +22,7 @@ const Main = () => {
                             rel="noreferrer"
                         >
                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <FaLinkedinIn />
+                                <FaLinkedinIn size={24}/>
                             </div>
                         </a>
 
@@ -32,7 +32,7 @@ const Main = () => {
                             rel="noreferrer"
                         >
                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <FaGithub />
+                                <FaGithub size={24} />
                             </div>
                         </a>
 
@@ -42,7 +42,7 @@ const Main = () => {
                             rel="noreferrer"
                         >
                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <AiOutlineMail />
+                                <AiOutlineMail size={24} />
                             </div>
                         </a>
 
@@ -52,7 +52,7 @@ const Main = () => {
                             rel="noreferrer"
                         >
                             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <BsFillPersonLinesFill />
+                                <BsFillPersonLinesFill size={24} />
                             </div>
                         </a>
                     </div>
