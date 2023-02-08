@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import fitnessPreview from "../public/assets/projects/fitness-plan.png"
+import fitnessPreview from "../public/assets/projects/fitness-plans.png"
 import fitmobilePreview from "../public/assets/projects/fitmobile-preview.jpg"
 import restaurantPreview from "../public/assets/projects/restaurant-menu.png"
 import igClonePreview from "../public/assets/projects/ig-preview.png"
