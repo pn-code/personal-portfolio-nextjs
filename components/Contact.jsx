@@ -73,15 +73,15 @@ const Contact = () => {
                     {/* Left-side */}
                     <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
                         <div className="lg:p-4 h-full">
-                            <div className="relative group w-[360px] h-[300px]">
+                            <div className="relative group w-[330px] h-[300px]">
                                 <Image
                                     className="rounded-xl mb-3"
                                     src={duckImg}
-                                    width={360}
-                                    height={360}
+                                    width={340}
+                                    height={300}
                                     alt=""
                                 />
-                                <span className="absolute w-[360px] h-[292px] top-0 left-0 hidden group-hover:flex flex-col justify-center bg-zinc-600/60 rounded-xl">
+                                <span className="absolute w-[330px] h-[268px] top-0 left-0 hidden group-hover:flex flex-col justify-center bg-zinc-600/60 rounded-xl">
                                     <a
                                         className="items-center text-center underline text-white text-md py-1 rounded-b-lg font-semibold"
                                         href="https://unsplash.com/@rajvir91"
