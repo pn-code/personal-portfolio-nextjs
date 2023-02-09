@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import axios from "axios";
+
+// Icons
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -13,8 +16,41 @@ const Contact = () => {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
-    const canSendMessage = [name, phoneNumber, email, subject, message].every(Boolean)
-    console.log(canSendMessage)
+    const [loading, setLoading] = useState(false);
+    const [messageSent, setMessageSent] = useState(false);
+    const [messageError, setMessageError] = useState(false);
+
+    const handleSubmit = async () => {
+        setLoading(true);
+        const post = {
+            name,
+            tele: phoneNumber,
+            email,
+            title: subject,
+            body: message,
+            date: new Date().toISOString(),
+        };
+
+        try {
+            const res = await axios.post("/api/messages", post);
+            if (res.data.success) {
+                setMessageSent(true);
+
+                setName("");
+                setPhoneNumber("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+            }
+        } catch (error) {
+            setMessageError(true);
+        }
+        setLoading(false);
+    };
+
+    const canSendMessage = [name, phoneNumber, email, subject, message].every(
+        Boolean
+    );
 
     return (
         <div id="contact" className="w-full lg:h-screen">
@@ -100,6 +136,15 @@ const Contact = () => {
                         <h3 className="text-center text-2xl text-zinc-700 mt-5">
                             Contact Form
                         </h3>
+                        {messageSent && (
+                            <span className="flex justify-center text-md font-semibold mt-2 py-1 bg-blue-500 rounded-lg text-white">
+                                Message has been sent. Thank you.
+                            </span>
+                        )}
+                        {messageError && <span className="flex justify-center text-md font-semibold mt-2 py-1 bg-red-500 rounded-lg text-white">
+                            An error has occurred. Please send me an email
+                            instead.
+                        </span>}
                         <div className="p-4">
                             <form>
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -116,7 +161,9 @@ const Contact = () => {
                                             name="name"
                                             type="text"
                                             value={name}
-                                            onChange={(e) => setName(e.target.value)}
+                                            onChange={(e) =>
+                                                setName(e.target.value)
+                                            }
                                         />
                                     </div>
 
@@ -133,7 +180,9 @@ const Contact = () => {
                                             name="phone_number"
                                             type="tel"
                                             value={phoneNumber}
-                                            onChange={(e) => setPhoneNumber(e.target.value)}
+                                            onChange={(e) =>
+                                                setPhoneNumber(e.target.value)
+                                            }
                                         />
                                     </div>
 
@@ -150,7 +199,9 @@ const Contact = () => {
                                             name="email"
                                             type="email"
                                             value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
+                                            onChange={(e) =>
+                                                setEmail(e.target.value)
+                                            }
                                         />
                                     </div>
 
@@ -167,7 +218,9 @@ const Contact = () => {
                                             name="subject"
                                             type="text"
                                             value={subject}
-                                            onChange={(e) => setSubject(e.target.value)}
+                                            onChange={(e) =>
+                                                setSubject(e.target.value)
+                                            }
                                         />
                                     </div>
                                 </div>
@@ -184,10 +237,17 @@ const Contact = () => {
                                         id="message"
                                         name="message"
                                         value={message}
-                                        onChange={(e) => setMessage(e.target.value)}
+                                        onChange={(e) =>
+                                            setMessage(e.target.value)
+                                        }
                                     ></textarea>
                                 </div>
-                                <button disabled={!canSendMessage} className="w-full p-4 text-gray-100 mt-4 disabled:cursor-not-allowed disabled:bg-zinc-700">
+                                <button
+                                    type="button"
+                                    onClick={handleSubmit}
+                                    disabled={!canSendMessage | loading}
+                                    className="w-full p-4 text-gray-100 mt-4 disabled:cursor-not-allowed"
+                                >
                                     Send Message
                                 </button>
                             </form>
