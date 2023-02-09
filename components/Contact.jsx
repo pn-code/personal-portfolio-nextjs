@@ -43,6 +43,7 @@ const Contact = () => {
                 setMessage("");
             }
         } catch (error) {
+            setMessageSent(false)
             setMessageError(true);
         }
         setLoading(false);
