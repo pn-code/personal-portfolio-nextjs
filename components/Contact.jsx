@@ -21,8 +21,12 @@ const Contact = () => {
     const [messageSent, setMessageSent] = useState(false);
     const [messageError, setMessageError] = useState(false);
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        setMessageError(false);
         setLoading(true);
+
         const post = {
             name,
             tele: phoneNumber,
@@ -50,9 +54,13 @@ const Contact = () => {
         setLoading(false);
     };
 
-    const canSendMessage = [name, phoneNumber, email, subject, message].every(
-        Boolean
-    );
+    const canSendMessage = [
+        name,
+        phoneNumber,
+        email,
+        subject,
+        message.length >= 10,
+    ].every(Boolean);
 
     return (
         <div id="contact" className="w-full lg:h-screen">
@@ -163,7 +171,7 @@ const Contact = () => {
                             </span>
                         )}
                         <div className="p-4">
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                                     <div className="flex flex-col py-2">
                                         <label
@@ -178,12 +186,17 @@ const Contact = () => {
                                             minLength={3}
                                             maxLength={30}
                                             name="name"
+                                            placeholder="Name"
                                             type="text"
                                             value={name}
                                             onChange={(e) =>
                                                 setName(e.target.value)
                                             }
                                         />
+                                        <span className="text-xs text-gray-500 pt-2 p-1">
+                                            Name should be more than 3
+                                            characters but less than 30
+                                        </span>
                                     </div>
 
                                     <div className="flex flex-col py-2">
@@ -198,6 +211,7 @@ const Contact = () => {
                                             id="phone_number"
                                             name="phone_number"
                                             type="tel"
+                                            placeholder="(123) 456-7890"
                                             minLength={10}
                                             maxLength={15}
                                             value={phoneNumber}
@@ -205,6 +219,10 @@ const Contact = () => {
                                                 setPhoneNumber(e.target.value)
                                             }
                                         />
+                                        <span className="text-xs text-gray-500 pt-2 p-1">
+                                            Phone Number should be formatted as
+                                            shown: (123) 456-7890
+                                        </span>
                                     </div>
 
                                     <div className="flex flex-col py-2">
@@ -219,6 +237,7 @@ const Contact = () => {
                                             id="email"
                                             name="email"
                                             type="email"
+                                            placeholder="Email"
                                             minLength={5}
                                             maxLength={40}
                                             value={email}
@@ -240,6 +259,7 @@ const Contact = () => {
                                             id="subject"
                                             name="subject"
                                             type="text"
+                                            placeholder="Subject"
                                             minLength={3}
                                             maxLength={30}
                                             value={subject}
@@ -247,6 +267,10 @@ const Contact = () => {
                                                 setSubject(e.target.value)
                                             }
                                         />
+                                        <span className="text-xs text-gray-500 pt-2 p-1">
+                                            Subject should be more than 3
+                                            characters, but less than 30.
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="flex flex-col py-2">
@@ -261,17 +285,22 @@ const Contact = () => {
                                         rows={10}
                                         id="message"
                                         name="message"
+                                        placeholder="Message"
                                         minLength={10}
                                         maxLength={300}
                                         value={message}
+                                        required
                                         onChange={(e) =>
                                             setMessage(e.target.value)
                                         }
                                     ></textarea>
+                                    <span className="text-xs text-gray-500 pt-2 p-1">
+                                        Message should be more than 10
+                                        characters, but less than 300.
+                                    </span>
                                 </div>
                                 <button
-                                    type="button"
-                                    onClick={handleSubmit}
+                                    type="submit"
                                     disabled={!canSendMessage | loading}
                                     className="w-full p-4 text-gray-100 mt-4 disabled:cursor-not-allowed"
                                 >
