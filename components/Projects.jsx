@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import fitnessPreview from "../public/assets/projects/fitness-plans.png"
-import fitmobilePreview from "../public/assets/projects/fitmobile-preview.jpg"
-import restaurantPreview from "../public/assets/projects/restaurant-menu.png"
-import igClonePreview from "../public/assets/projects/ig-preview.png"
+import fitnessPreview from "../public/assets/projects/fitness-plans.png";
+import fitmobilePreview from "../public/assets/projects/fitmobile-preview.jpg";
+import restaurantPreview from "../public/assets/projects/restaurant-menu.png";
+import igClonePreview from "../public/assets/projects/ig-preview.png";
 
 const Projects = () => {
     return (
@@ -16,11 +16,11 @@ const Projects = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Add Latest Projects Here... */}
                     <ProjectItem
-                        title="Fitness App"
-                        type="ReactJS / MERN Stack"
-                        imgSrc={fitnessPreview}
+                        title="Restaurant App"
+                        type="NextJS"
+                        imgSrc={restaurantPreview}
                         imgAlt="/"
-                        href="/fitness"
+                        href="/restaurant"
                     />
                     <ProjectItem
                         title="Fitness Mobile"
@@ -30,11 +30,11 @@ const Projects = () => {
                         href="/fitmobile"
                     />
                     <ProjectItem
-                        title="Restaurant App"
-                        type="NextJS"
-                        imgSrc={restaurantPreview}
+                        title="Fitness App"
+                        type="ReactJS / MERN Stack"
+                        imgSrc={fitnessPreview}
                         imgAlt="/"
-                        href="/restaurant"
+                        href="/fitness"
                     />
                     <ProjectItem
                         title="Instagram Clone"
