@@ -10,7 +10,6 @@ import expressLogo from "../public/assets/skills/express.png"
 import nextLogo from "../public/assets/skills/nextjs.png"
 import mongoLogo from "../public/assets/skills/mongo.png"
 import tailwindLogo from "../public/assets/skills/tailwind.png"
-import {SiHtml5, SiRubygems} from "react-icons/si"
 
 const Skills = () => {
     return (
@@ -25,7 +24,12 @@ const Skills = () => {
                     <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
-                                <SiHtml5 color="rgb(233, 80, 20)" size={64}/>
+                                <Image
+                                    src={htmlLogo}
+                                    width={64}
+                                    height={64}
+                                    alt="HTML"
+                                />
                             </div>
                             <div className="flex flex-col items-center justify-center">
                                 <h3>HTML</h3>
