@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import axios from "axios";
+import duckImg from "../public/assets/duck.png";
 
 // Icons
 import { AiOutlineMail } from "react-icons/ai";
@@ -43,7 +44,7 @@ const Contact = () => {
                 setMessage("");
             }
         } catch (error) {
-            setMessageSent(false)
+            setMessageSent(false);
             setMessageError(true);
         }
         setLoading(false);
@@ -64,13 +65,26 @@ const Contact = () => {
                     {/* Left-side */}
                     <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
                         <div className="lg:p-4 h-full">
-                            <Image
-                                className="rounded-xl hover:scale-110 ease-in duration-300"
-                                src="/../public/assets/skills/html.png"
-                                width={100}
-                                height={100}
-                                alt=""
-                            />
+                            <div className="relative group w-[360px] h-[300px]">
+                                <Image
+                                    className="rounded-xl mb-3"
+                                    src={duckImg}
+                                    width={360}
+                                    height={360}
+                                    alt=""
+                                />
+                                <span className="absolute w-[360px] h-[292px] top-0 left-0 hidden group-hover:flex flex-col justify-center bg-zinc-600/60 rounded-xl">
+                                    <a
+                                        className="items-center text-center underline text-white text-md py-1 rounded-b-lg font-semibold"
+                                        href="https://unsplash.com/@rajvir91"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Credits to Rajvir Kaur
+                                    </a>
+                                </span>
+                            </div>
+
                             <div>
                                 <h2 className="py-2">Philip Nguyen</h2>
                                 <p className="font-semibold">
@@ -142,10 +156,12 @@ const Contact = () => {
                                 Message has been sent. Thank you.
                             </span>
                         )}
-                        {messageError && <span className="flex justify-center text-md font-semibold mt-2 py-1 bg-red-500 rounded-lg text-white">
-                            An error has occurred. Please send me an email
-                            instead.
-                        </span>}
+                        {messageError && (
+                            <span className="flex justify-center text-md font-semibold mt-2 py-1 bg-red-500 rounded-lg text-white">
+                                An error has occurred. Please send me an email
+                                instead.
+                            </span>
+                        )}
                         <div className="p-4">
                             <form>
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
