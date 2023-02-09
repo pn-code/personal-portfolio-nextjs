@@ -34,6 +34,14 @@
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#197cd8] to-[#273ea7] text-white hover:shadow-gray-500 ease-in duration-300
   }
 
+  button:enabled {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#197cd8] to-[#273ea7] text-white hover:shadow-gray-500 ease-in duration-300
+  }
+
+  button:disabled {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-[#273ea7]/50 text-white
+  }
+
   .navLink {
     @apply ml-10 text-sm text-zinc-800 uppercase hover:border-b font-semibold border-zinc-900
   }
