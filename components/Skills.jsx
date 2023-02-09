@@ -1,5 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import htmlLogo from "../public/assets/skills/html.png"
+import cssLogo from "../public/assets/skills/css.png"
+import jsLogo from "../public/assets/skills/javascript.png"
+import reactLogo from "../public/assets/skills/react.png"
+import firebaseLogo from "../public/assets/skills/firebase.png"
+import nodeLogo from "../public/assets/skills/node.png"
+import expressLogo from "../public/assets/skills/express.png"
+import nextLogo from "../public/assets/skills/nextjs.png"
+import mongoLogo from "../public/assets/skills/mongo.png"
+import tailwindLogo from "../public/assets/skills/tailwind.png"
 
 const Skills = () => {
     return (
@@ -15,7 +25,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/html.png"
+                                    src={htmlLogo}
                                     width={64}
                                     height={64}
                                     alt="HTML"
@@ -31,7 +41,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/css.png"
+                                    src={cssLogo}
                                     width={64}
                                     height={64}
                                     alt="CSS"
@@ -48,7 +58,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/javascript.png"
+                                    src={jsLogo}
                                     width={64}
                                     height={64}
                                     alt="JavaScript"
@@ -65,7 +75,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/react.png"
+                                    src={reactLogo}
                                     width={64}
                                     height={64}
                                     alt="React"
@@ -82,7 +92,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/firebase.png"
+                                    src={firebaseLogo}
                                     width={64}
                                     height={64}
                                     alt="Firebase"
@@ -99,7 +109,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/node.png"
+                                    src={nodeLogo}
                                     width={64}
                                     height={64}
                                     alt="node"
@@ -116,7 +126,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/nextjs.png"
+                                    src={nextLogo}
                                     width={64}
                                     height={64}
                                     alt="NextJS"
@@ -133,14 +143,14 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/mongo.png"
+                                    src={mongoLogo}
                                     width={64}
                                     height={64}
                                     alt="mongo"
                                 />
                             </div>
                             <div className="flex flex-col items-center justify-center">
-                                <h3>Mongo</h3>
+                                <h3>MongoDB</h3>
                             </div>
                         </div>
                     </div>
@@ -148,7 +158,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/tailwind.png"
+                                    src={tailwindLogo}
                                     width={64}
                                     height={64}
                                     alt="tailwind"
@@ -163,7 +173,7 @@ const Skills = () => {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/express.png"
+                                    src={expressLogo}
                                     width={64}
                                     height={64}
                                     alt="express"
