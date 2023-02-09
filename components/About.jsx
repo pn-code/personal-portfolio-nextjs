@@ -29,13 +29,16 @@ const About = () => {
                         </p>
                     </Link>
                 </div>
-                <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-110 ease-in duration-300">
+                <div className="w-full h-auto group m-auto shadow-xl shadow-gray-400 rounded-xl flex flex-col items-center justify-center p-4 hover:scale-110 ease-in duration-300">
                     <Image
                         src={aboutImg}
                         width={500}
                         height={500}
                         alt=""
                     />
+                    <span className="group-hover:flex hidden text-sm mt-2 hover:underline">
+                        <a rel="noreferrer" target="_blank" href="https://unsplash.com/@glenncarstenspeters">Credits to Glenn Carstens-Peters</a>
+                    </span>
                 </div>
             </div>
         </div>
