@@ -175,6 +175,8 @@ const Contact = () => {
                                         <input
                                             className="border-2 rounded-lg p-3 flex border-gray-400"
                                             id="name"
+                                            minLength={3}
+                                            maxLength={30}
                                             name="name"
                                             type="text"
                                             value={name}
@@ -196,6 +198,8 @@ const Contact = () => {
                                             id="phone_number"
                                             name="phone_number"
                                             type="tel"
+                                            minLength={10}
+                                            maxLength={15}
                                             value={phoneNumber}
                                             onChange={(e) =>
                                                 setPhoneNumber(e.target.value)
@@ -215,6 +219,8 @@ const Contact = () => {
                                             id="email"
                                             name="email"
                                             type="email"
+                                            minLength={5}
+                                            maxLength={40}
                                             value={email}
                                             onChange={(e) =>
                                                 setEmail(e.target.value)
@@ -234,6 +240,8 @@ const Contact = () => {
                                             id="subject"
                                             name="subject"
                                             type="text"
+                                            minLength={3}
+                                            maxLength={30}
                                             value={subject}
                                             onChange={(e) =>
                                                 setSubject(e.target.value)
@@ -253,6 +261,8 @@ const Contact = () => {
                                         rows={10}
                                         id="message"
                                         name="message"
+                                        minLength={10}
+                                        maxLength={300}
                                         value={message}
                                         onChange={(e) =>
                                             setMessage(e.target.value)
