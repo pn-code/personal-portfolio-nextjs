@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 
+import fitAuthImg from "../public/assets/projects/fit-auth.png";
+import fitJournalImg from "../public/assets/projects/fit-journal.jpg";
+import fitPlansImg from "../public/assets/projects/fit-plans.jpg";
+
 const FitMobile = () => {
     return (
         <div className="w-full">
@@ -12,7 +16,7 @@ const FitMobile = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/projects/fit-icon.jpg"
+                    src={fitAuthImg}
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -37,25 +41,29 @@ const FitMobile = () => {
                     </p>
                     <div className="flex flex-col gap-4 mb-5">
                         <Image
-                            src="/../public/assets/projects/fit-auth.png"
+                            src={fitAuthImg}
                             alt="/"
-                            width={900}
-                            height={900}
+                            width={500}
+                            height={500}
                         />
                         <Image
-                            src="/../public/assets/projects/fit-journal.jpg"
+                            src={fitJournalImg}
                             alt="/"
-                            width={900}
-                            height={900}
+                            width={500}
+                            height={500}
                         />
                         <Image
-                            src="/../public/assets/projects/fit-plans.jpg"
+                            src={fitPlansImg}
                             alt="/"
-                            width={900}
-                            height={900}
+                            width={500}
+                            height={500}
                         />
                     </div>
-                    <a href="https://github.com/pn-code/fitness-mobile" target="_blank" rel="noreferrer">
+                    <a
+                        href="https://github.com/pn-code/fitness-mobile"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <button className="px-8 py-2 mt-4 mr-8">Code</button>
                     </a>
                     <a href="" target="_blank" rel="noreferrer">
@@ -69,10 +77,12 @@ const FitMobile = () => {
                         </p>
                         <div className="grid grid-cols-3 md:grid-cols-1">
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> React Native
+                                <RiRadioButtonFill className="pr-2" /> React
+                                Native
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-2" /> Javascript
+                                <RiRadioButtonFill className="pr-2" />{" "}
+                                Javascript
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
                                 <RiRadioButtonFill className="pr-2" /> Firebase

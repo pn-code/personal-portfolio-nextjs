@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 
+import overviewImg from "../public/assets/projects/ig-logo.png"
+import previewImg from "../public/assets/projects/ig-preview.png"
+
 const Igclone = () => {
     return (
         <div className="w-full">
@@ -12,7 +15,7 @@ const Igclone = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/projects/ig-logo.png"
+                    src={overviewImg}
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -37,7 +40,7 @@ const Igclone = () => {
                     {/* Display Images */}
                     <div className="flex flex-col gap-4 mb-5">
                         <Image
-                            src="/../public/assets/projects/ig-preview.png"
+                            src={previewImg}
                             alt="/"
                             width={900}
                             height={900}

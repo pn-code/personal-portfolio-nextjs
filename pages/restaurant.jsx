@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 
+import itemImg from "../public/assets/projects/restaurant-item.png"
+import mainImg from "../public/assets/projects/restaurant-main.png"
+import menuImg from "../public/assets/projects/restaurant-menu.png"
+
 const Restaurant = () => {
     return (
         <div className="w-full">
@@ -12,7 +16,7 @@ const Restaurant = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src="/../public/assets/projects/restaurant-preview.png"
+                    src={itemImg}
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -49,20 +53,20 @@ const Restaurant = () => {
                         <Image
                             width={800}
                             height={800}
-                            src="/../public/assets/projects/restaurant-main.png"
+                            src={mainImg}
                             alt="/"
                         />
                         <Image
                             width={800}
                             height={800}
-                            src="/../public/assets/projects/restaurant-menu.png"
+                            src={menuImg}
                             alt="/"
                         />
                         <Image
                             width={800}
                             height={800}
                             objectFit="cover"
-                            src="/../public/assets/projects/restaurant-preview.png"
+                            src={itemImg}
                             alt="/"
                         />
                     </div>

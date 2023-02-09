@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import fitnessOverlay from "../public/assets/projects/fitness-overlay.jpg";
+import fitnessCalculatorImg from "../public/assets/projects/fitness-calculate.png"
+import fitnessPlansImg from "../public/assets/projects/fitness-plans.png"
+import fitnessJournalImg from "../public/assets/projects/fitness-journal.png"
 
 const Fitness = () => {
     return (
@@ -36,19 +39,19 @@ const Fitness = () => {
                     </p>
                     <div className="flex flex-col gap-4 mb-5">
                         <Image
-                            src="/../public/assets/projects/fitness-calculate.png"
+                            src={fitnessCalculatorImg}
                             alt="/"
                             width={900}
                             height={900}
                         />
                         <Image
-                            src="/../public/assets/projects/fitness-plans.png"
+                            src={fitnessPlansImg}
                             alt="/"
                             width={900}
                             height={900}
                         />
                         <Image
-                            src="/../public/assets/projects/fitness-journal.png"
+                            src={fitnessJournalImg}
                             alt="/"
                             width={900}
                             height={900}
