@@ -1,9 +1,18 @@
 import React from "react";
 import axios from "axios";
+import MessageCard from "../components/MessageCard";
 
 const Admin = ({ messages }) => {
-    console.log(messages)
-  return (<div>admin</div>);
+  return (
+    <div className="pt-[90px] mx-2">
+      {/* Messages Container */}
+      <div>
+        {messages.map((message) => (
+          <MessageCard key={message._id} message={message} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Admin;
@@ -22,7 +31,7 @@ export const getServerSideProps = async (ctx) => {
   }
   return {
     props: {
-      messages: res.data,
+      messages: res.data.data,
     },
   };
 };
