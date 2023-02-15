@@ -43,6 +43,6 @@
   }
 
   .navLink {
-    @apply ml-10 text-sm text-zinc-800 uppercase hover:border-b font-semibold border-zinc-900
+    @apply ml-10 text-sm text-zinc-800 uppercase hover:scale-110 ease-in duration-200 font-semibold border-zinc-900
   }
 }
