@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import MessageCard from "../components/MessageCard";
 
 const Admin = ({ messages }) => {
+  const [messagesArray, setMessagesArray] = useState(messages);
+
   return (
     <div className="pt-[90px] mx-2">
       {/* Messages Container */}
-      <div>
-        {messages.map((message) => (
-          <MessageCard key={message._id} message={message} />
+      <div className="flex flex-col gap-2">
+        {messagesArray.map((message) => (
+          <MessageCard key={message._id} message={message} setMessagesArray={setMessagesArray}/>
         ))}
       </div>
     </div>
