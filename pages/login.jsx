@@ -1,19 +1,33 @@
-import axios from "axios";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
+import axios from "axios";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
+
+  const router = useRouter();
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setError(false);
     const res = await axios.post("/api/login", { username, password });
-    console.log(res)
+    if (res.data.success) {
+      router.push("/admin");
+    } else {
+      setError(true);
+    }
   };
 
   return (
     <div className="w-full h-[600px] flex flex-col justify-center items-center pt-[80px]">
-      <h1 className="mb-10">Login</h1>
+      <h1 className="mb-8">Login</h1>
+      {error && (
+        <span className="text-red-500 font-semibold pb-4">
+          Wrong Credentials
+        </span>
+      )}
       <form onSubmit={handleLogin} className="flex flex-col gap-4">
         <input
           onChange={(e) => setUsername(e.target.value)}
