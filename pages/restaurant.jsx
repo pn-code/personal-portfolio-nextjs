@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-import itemImg from "../public/assets/projects/restaurant-item.png"
-import mainImg from "../public/assets/projects/restaurant-main.png"
-import menuImg from "../public/assets/projects/restaurant-menu.png"
+import itemImg from "../public/assets/projects/restaurant-item.png";
+import mainImg from "../public/assets/projects/restaurant-main.png";
+import menuImg from "../public/assets/projects/restaurant-menu.png";
 
 const Restaurant = () => {
     return (
@@ -50,18 +50,8 @@ const Restaurant = () => {
                     </p>
                     {/* Images Container */}
                     <div className="flex flex-col gap-4 mb-5">
-                        <Image
-                            width={800}
-                            height={800}
-                            src={mainImg}
-                            alt="/"
-                        />
-                        <Image
-                            width={800}
-                            height={800}
-                            src={menuImg}
-                            alt="/"
-                        />
+                        <Image width={800} height={800} src={mainImg} alt="/" />
+                        <Image width={800} height={800} src={menuImg} alt="/" />
                         <Image
                             width={800}
                             height={800}
@@ -77,7 +67,11 @@ const Restaurant = () => {
                     >
                         <button className="px-8 py-2 mt-4 mr-8">Code</button>
                     </a>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a
+                        href="https://restaurant.philipnguyen.dev"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <button className="px-8 py-2 mt-4">Demo</button>
                     </a>
                 </div>

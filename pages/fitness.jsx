@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import fitnessOverlay from "../public/assets/projects/fitness-overlay.jpg";
-import fitnessCalculatorImg from "../public/assets/projects/fitness-calculate.png"
-import fitnessPlansImg from "../public/assets/projects/fitness-plans.png"
-import fitnessJournalImg from "../public/assets/projects/fitness-journal.png"
+import fitnessCalculatorImg from "../public/assets/projects/fitness-calculate.png";
+import fitnessPlansImg from "../public/assets/projects/fitness-plans.png";
+import fitnessJournalImg from "../public/assets/projects/fitness-journal.png";
 
 const Fitness = () => {
     return (
@@ -64,7 +64,11 @@ const Fitness = () => {
                     >
                         <button className="px-8 py-2 mt-4 mr-8">Code</button>
                     </a>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a
+                        href="https://fitness.philipnguyen.dev"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <button className="px-8 py-2 mt-4">Demo</button>
                     </a>
                 </div>
