@@ -7,6 +7,9 @@ const MessageSchema = new mongoose.Schema({
     title: { type: String, minLength: 3, maxLength: 30, required: true },
     body: { type: String, minLength: 10, maxLength: 300, required: true },
     date: { type: String, required: true },
+},
+{
+    timestamps: true
 });
 
 module.exports =
