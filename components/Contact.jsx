@@ -65,13 +65,13 @@ const Contact = () => {
     return (
         <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-                <p className="text-xl tracking-widest uppercase text-[#3855b6] font-semibold">
+                <p className="text-xl tracking-widest uppercase text-indigo-600 font-semibold">
                     Contact
                 </p>
                 <h2 className="py-4">Get In Touch</h2>
                 <div className="grid lg:grid-cols-5 gap-8">
                     {/* Left-side */}
-                    <div className="col-span-3 bg-gray-200 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+                    <div className="col-span-3 bg-blue-900/40 lg:col-span-2 w-full h-full rounded-xl p-4">
                         <div className="lg:p-4 h-full">
                             <div className="relative group w-[330px] h-[300px]">
                                 <Image
@@ -112,7 +112,7 @@ const Contact = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <div className="rounded-full shadow-lg shadow-blue-500/40 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <FaLinkedinIn size={24} />
                                             </div>
                                         </a>
@@ -122,7 +122,7 @@ const Contact = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <div className="rounded-full shadow-lg shadow-blue-500 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <FaGithub size={24} />
                                             </div>
                                         </a>
@@ -132,7 +132,7 @@ const Contact = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <div className="rounded-full shadow-lg shadow-blue-500 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <AiOutlineMail size={24} />
                                             </div>
                                         </a>
@@ -142,7 +142,7 @@ const Contact = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                            <div className="rounded-full shadow-lg shadow-blue-500 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                                 <BsFillPersonLinesFill
                                                     size={24}
                                                 />
@@ -155,8 +155,8 @@ const Contact = () => {
                     </div>
 
                     {/* Right-side */}
-                    <div className="col-span-3 w-full h-auto bg-gray-200 shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-                        <h3 className="text-center text-2xl text-zinc-700 mt-5">
+                    <div className="col-span-3 w-full h-auto bg-blue-900/40 rounded-xl lg:p-4">
+                        <h3 className="text-center text-2xl mt-5">
                             Contact Form
                         </h3>
                         {messageSent && (
@@ -181,7 +181,7 @@ const Contact = () => {
                                             Name:
                                         </label>
                                         <input
-                                            className="border-2 rounded-lg p-3 flex border-gray-400"
+                                            className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
                                             id="name"
                                             minLength={3}
                                             maxLength={30}
@@ -193,7 +193,7 @@ const Contact = () => {
                                                 setName(e.target.value)
                                             }
                                         />
-                                        <span className="text-xs text-gray-500 pt-2 p-1">
+                                        <span className="text-xs text-gray-200 pt-2 p-1">
                                             Name should be more than 3
                                             characters but less than 30
                                         </span>
@@ -207,7 +207,7 @@ const Contact = () => {
                                             Phone Number:
                                         </label>
                                         <input
-                                            className="border-2 rounded-lg p-3 flex border-gray-400"
+                                            className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
                                             id="phone_number"
                                             name="phone_number"
                                             type="tel"
@@ -219,7 +219,7 @@ const Contact = () => {
                                                 setPhoneNumber(e.target.value)
                                             }
                                         />
-                                        <span className="text-xs text-gray-500 pt-2 p-1">
+                                        <span className="text-xs text-gray-200 pt-2 p-1">
                                             Phone Number should be formatted as
                                             shown: (123) 456-7890
                                         </span>
@@ -233,7 +233,7 @@ const Contact = () => {
                                             Email:
                                         </label>
                                         <input
-                                            className="border-2 rounded-lg p-3 flex border-gray-400"
+                                            className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
                                             id="email"
                                             name="email"
                                             type="email"
@@ -255,7 +255,7 @@ const Contact = () => {
                                             Subject
                                         </label>
                                         <input
-                                            className="border-2 rounded-lg p-3 flex border-gray-400"
+                                            className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
                                             id="subject"
                                             name="subject"
                                             type="text"
@@ -267,7 +267,7 @@ const Contact = () => {
                                                 setSubject(e.target.value)
                                             }
                                         />
-                                        <span className="text-xs text-gray-500 pt-2 p-1">
+                                        <span className="text-xs text-gray-200 pt-2 p-1">
                                             Subject should be more than 3
                                             characters, but less than 30.
                                         </span>
@@ -281,7 +281,7 @@ const Contact = () => {
                                         Message:
                                     </label>
                                     <textarea
-                                        className="border-2 rounded-lg p-3 flex border-gray-400 resize-none"
+                                        className="border-2 rounded-lg p-3 flex border-gray-400 text-black resize-none"
                                         rows={10}
                                         id="message"
                                         name="message"
@@ -294,7 +294,7 @@ const Contact = () => {
                                             setMessage(e.target.value)
                                         }
                                     ></textarea>
-                                    <span className="text-xs text-gray-500 pt-2 p-1">
+                                    <span className="text-xs text-gray-200 pt-2 p-1">
                                         Message should be more than 10
                                         characters, but less than 300.
                                     </span>
@@ -312,9 +312,9 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-center py-12">
                     <Link href="/">
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gray-800">
                             <HiOutlineChevronDoubleUp
-                                className="m-auto text-[#3855b6]"
+                                className="m-auto text-indigo-600"
                                 size={30}
                             />
                         </div>

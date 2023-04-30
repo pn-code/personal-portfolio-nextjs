@@ -8,11 +8,11 @@ const Main = () => {
         <div className="w-full h-screen text-center">
             <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
                 <div>
-                    <h1 className="py-4 text-gray-800">
+                    <h1 className="py-4 text-gray-50">
                         Hi, I&apos;m {" "}
-                        <span className="text-[#3855b6]">Philip Nguyen</span>,
+                        <span className="text-indigo-600">Philip Nguyen,</span>
                     </h1>
-                    <h2 className="py-4 text-gray-800">
+                    <h2 className="py-4 text-gray-50">
                         A Full-Stack Web Developer
                     </h2>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4 pt-8">
@@ -21,8 +21,8 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <FaLinkedinIn size={24}/>
+                            <div className="rounded-full shadow-lg bg-gray-200 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                <FaLinkedinIn size={24} color="black"/>
                             </div>
                         </a>
 
@@ -31,8 +31,8 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <FaGithub size={24} />
+                            <div className="rounded-full shadow-lg bg-gray-200 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                <FaGithub size={24} color="black"/>
                             </div>
                         </a>
 
@@ -41,8 +41,8 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <AiOutlineMail size={24} />
+                            <div className="rounded-full shadow-lg bg-gray-200 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                <AiOutlineMail size={24} color="black"/>
                             </div>
                         </a>
 
@@ -51,8 +51,8 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                <BsFillPersonLinesFill size={24} />
+                            <div className="rounded-full shadow-lg bg-gray-300 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                                <BsFillPersonLinesFill size={24} color="black"/>
                             </div>
                         </a>
                     </div>
