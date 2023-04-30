@@ -10,19 +10,19 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Philip Nguyen | Full Stack Developer</title>
+                <title>Philip Nguyen</title>
                 <meta
                     name="description"
-                    content="Philip Nguyen | Full Stack Developer"
+                    content="Philip Nguyen, a Full Stack Developer"
                 />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <link rel="icon" href="/favicon.svg" />
+                <link rel="icon" href="/favicon.svg"/>
             </Head>
             <Navbar />
-            <main>
+            <main className="px-4">
                 <Main />
                 <About />
                 <Skills />
