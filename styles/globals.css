@@ -12,11 +12,11 @@
 
 @layer base {
   body {
-    @apply bg-[#eeeded] text-[#131212] tracking-wide
+    @apply bg-[#282828] text-white/90 tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-bold text-white/90
   }
 
   h1 {
@@ -32,18 +32,18 @@
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#197cd8] to-[#273ea7] text-white hover:shadow-gray-500 ease-in duration-300
+    @apply rounded-xl uppercase bg-indigo-600 text-white hover:bg-indigo-700 ease-in duration-300
   }
 
   button:enabled {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#197cd8] to-[#273ea7] text-white hover:shadow-gray-500
+    @apply shadow-lg rounded-xl uppercase bg-indigo-600 text-white hover:bg-indigo-700
   }
 
   button:disabled {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-[#273ea7]/50 text-white
+    @apply rounded-xl uppercase bg-gray-500 text-white
   }
 
   .navLink {
-    @apply ml-10 text-sm text-zinc-800 uppercase hover:scale-110 ease-in duration-200 font-semibold border-zinc-900
+    @apply ml-10 text-sm uppercase hover:scale-110 ease-in duration-200 font-semibold border-zinc-900
   }
 }
