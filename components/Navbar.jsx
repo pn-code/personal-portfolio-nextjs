@@ -6,7 +6,6 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import navLogo from ".//../public/assets/navLogo.png";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -51,7 +50,7 @@ const Navbar = () => {
         >
             <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
                 <Link className="text-2xl font-semibold" href="/">
-                    Philip Nguyen
+                    Philip
                 </Link>
 
                 <div>
@@ -87,7 +86,7 @@ const Navbar = () => {
             <div
                 className={
                     nav
-                        ? "md:hidden fixed left-0 top-0 w-full h-screen bg-white/70"
+                        ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
                         : ""
                 }
             >
@@ -100,9 +99,9 @@ const Navbar = () => {
                 >
                     <div>
                         <div className="flex w-full items-center justify-between">
-                            <h1>Philip Nguyen</h1>
+                            <h1 className="text-3xl">Philip Nguyen</h1>
                             <div
-                                className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer bg-gray-300"
+                                className="rounded-full shadow-lg shadow-gray-500 p-3 cursor-pointer bg-gray-300 hover:bg-gray-200"
                                 onClick={handleNav}
                             >
                                 <AiOutlineClose color="black"/>
@@ -114,7 +113,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm font-semibold"
+                                        className="py-4 text-sm font-semibold text-white/90 hover:text-white"
                                     >
                                         Home
                                     </li>
@@ -122,7 +121,7 @@ const Navbar = () => {
                                 <Link href="/#about">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm font-semibold"
+                                        className="py-4 text-sm font-semibold text-white/90 hover:text-white"
                                     >
                                         About
                                     </li>
@@ -130,7 +129,7 @@ const Navbar = () => {
                                 <Link href="/#skills">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm font-semibold"
+                                        className="py-4 text-sm font-semibold text-white/90 hover:text-white"
                                     >
                                         Skills
                                     </li>
@@ -138,7 +137,7 @@ const Navbar = () => {
                                 <Link href="/#projects">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm font-semibold"
+                                        className="py-4 text-sm font-semibold text-white/90 hover:text-white"
                                     >
                                         Projects
                                     </li>
@@ -146,18 +145,18 @@ const Navbar = () => {
                                 <Link href="/#contact">
                                     <li
                                         onClick={() => setNav(false)}
-                                        className="py-4 text-sm font-semibold"
+                                        className="py-4 text-sm font-semibold text-white/90 hover:text-white"
                                     >
                                         Contact
                                     </li>
                                 </Link>
                             </ul>
                             <div className="pt-40">
-                                <p className="uppercase tracking-widest text-[#4b6bc5]">
+                                <p className="uppercase tracking-widest text-indigo-600 font-semibold">
                                     Let&apos;s Connect
                                 </p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full bg-indigo-900 shadow-lg shadow-indigo-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <a
                                             href="https://www.linkedin.com/in/philip-nguyen-92b6671b0/"
                                             target="_blank"
@@ -166,7 +165,7 @@ const Navbar = () => {
                                             <FaLinkedinIn />
                                         </a>
                                     </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full bg-indigo-900 shadow-lg shadow-indigo-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <a
                                             href="https://github.com/pn-code"
                                             target="_blank"
@@ -175,7 +174,7 @@ const Navbar = () => {
                                             <FaGithub />
                                         </a>
                                     </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full bg-indigo-900 shadow-lg shadow-indigo-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <a
                                             href=""
                                             target="_blank"
@@ -184,7 +183,7 @@ const Navbar = () => {
                                             <AiOutlineMail />
                                         </a>
                                     </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full bg-indigo-900 shadow-lg shadow-indigo-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <a
                                             href="/resume"
                                             target="_blank"
