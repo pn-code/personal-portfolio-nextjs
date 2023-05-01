@@ -26,6 +26,7 @@ const ProjectItem = ({
         <section className="flex gap-4 mb-2">
           <a
             target="_blank"
+            rel="noreferrer"
             className="flex gap-4 items-center bg-indigo-700 hover:bg-indigo-600 py-2 px-4 rounded-md justify-center"
             href={githubLink}
           >
@@ -35,6 +36,7 @@ const ProjectItem = ({
           {demo ? (
             <a
               target="_blank"
+              rel="noreferrer"
               className="flex gap-4 items-center bg-amber-500 hover:bg-amber-400 py-2 px-4 rounded-md justify-center"
               href={demoLink}
             >
