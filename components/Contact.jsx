@@ -108,7 +108,7 @@ const Contact = () => {
                                     </p>
                                     <div className="flex items-center justify-between py-4">
                                         <a
-                                            href="https://www.linkedin.com/in/philip-nguyen-92b6671b0/"
+                                            href="https://www.linkedin.com/in/pncode/"
                                             target="_blank"
                                             rel="noreferrer"
                                         >

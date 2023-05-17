@@ -17,7 +17,7 @@ const Main = () => {
                     </h2>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4 pt-8">
                         <a
-                            href="https://www.linkedin.com/in/philip-nguyen-92b6671b0/"
+                            href="https://www.linkedin.com/in/pncode"
                             target="_blank"
                             rel="noreferrer"
                         >
