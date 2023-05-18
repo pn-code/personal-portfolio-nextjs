@@ -25,7 +25,7 @@ const About = () => {
             <span className="text-amber-300">high-quality</span> software
             products that make a{" "}
             <span className="text-green-300">positive and lasting impact</span>{" "}
-            on people's lives. If you are in search of a{" "}
+            on people&apos;s lives. If you are in search of a{" "}
             <span className="text-blue-300">dedicated{" "}</span>
             and{" "}
             <span className="text-indigo-300">self-motivated {" "}</span>
