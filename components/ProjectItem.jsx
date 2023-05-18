@@ -14,7 +14,7 @@ const ProjectItem = ({
   githubLink,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full rounded-xl p-4 group hover:bg-gradient-to-r from-[#8336c66d] to-[#7327bfac]">
+    <div className="relative flex items-center justify-center h-auto w-full rounded-xl p-4 group hover:bg-gradient-to-r from-accent to-primaryBtn">
       <Image
         className="rounded-xl group-hover:opacity-10"
         src={imgSrc}
