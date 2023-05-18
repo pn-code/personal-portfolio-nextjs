@@ -48,7 +48,7 @@ const Navbar = () => {
             <li className="navLink">
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="bg-accent px-4 py-2 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300">
+            <li className="bg-accent/90 px-4 py-1 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300 mb-2">
               <Link href="/#contact">Contact Me</Link>
             </li>
           </ul>
