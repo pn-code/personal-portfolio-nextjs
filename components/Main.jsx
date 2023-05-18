@@ -1,5 +1,4 @@
-import React from "react";
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
