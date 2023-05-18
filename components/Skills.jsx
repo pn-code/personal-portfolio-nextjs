@@ -33,7 +33,7 @@ const Skills = () => {
           </a>
         </header>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-4 py-8 rounded-lg">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 px-4 py-8 rounded-lg">
           <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
