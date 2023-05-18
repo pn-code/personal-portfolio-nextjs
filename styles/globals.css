@@ -44,6 +44,6 @@
   }
 
   .navLink {
-    @apply ml-10 text-sm uppercase ease-in duration-200 font-semibold hover:border-accent border-b-2 border-transparent
+    @apply ml-10 text-sm uppercase ease-in duration-200 font-semibold hover:border-accent border-b-4 border-transparent
   }
 }

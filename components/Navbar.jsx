@@ -41,7 +41,7 @@ const Navbar = () => {
             <li className="navLink">
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="bg-primaryBtn px-4 py-2 rounded-lg border-2 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300">
+            <li className="bg-primaryBtn px-4 py-2 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300">
               <Link href="/#contact">Contact Me</Link>
             </li>
           </ul>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <Link href="/">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-2 border-transparent hover:border-accent"
+                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
                     <AiFillHome size={22} color="white"/>
                     Home
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <Link href="/#about">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-2 border-transparent hover:border-accent"
+                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
                     <AiFillAlert size={22} color="white"/>
                     About
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <Link href="/#skills">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-2 border-transparent hover:border-accent"
+                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
                     <AiFillFire size={22} color="white"/>
                     Skills
@@ -108,7 +108,7 @@ const Navbar = () => {
                 <Link href="/#projects">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-2 border-transparent hover:border-accent"
+                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
                     <AiFillThunderbolt size={22} color="white"/>
                     Projects
@@ -117,7 +117,7 @@ const Navbar = () => {
                 <Link href="/#contact">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-2 border-transparent hover:border-accent"
+                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
                     <AiFillMessage size={22} color="white"/>
                     Contact
@@ -129,7 +129,7 @@ const Navbar = () => {
                   Let&apos;s Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                  <div className="rounded-full bg-primaryBtn shadow-lg shadow-primary p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <a
                       href="https://www.linkedin.com/in/pn-code/"
                       target="_blank"
@@ -138,7 +138,7 @@ const Navbar = () => {
                       <FaLinkedinIn />
                     </a>
                   </div>
-                  <div className="rounded-full bg-primaryBtn shadow-lg shadow-primary p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <a
                       href="https://github.com/pn-code"
                       target="_blank"
@@ -147,12 +147,12 @@ const Navbar = () => {
                       <FaGithub />
                     </a>
                   </div>
-                  <div className="rounded-full bg-primaryBtn shadow-lg shadow-primary p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <a href="" target="_blank" rel="noreferrer">
                       <AiOutlineMail />
                     </a>
                   </div>
-                  <div className="rounded-full bg-primaryBtn shadow-lg shadow-primary p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <a href="/resume" target="_blank" rel="noreferrer">
                       <BsFillPersonLinesFill />
                     </a>
