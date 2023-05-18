@@ -24,13 +24,18 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100] bg-secondary">
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
-        <Link className="text-xl font-semibold flex gap-4 items-center" href="/">
+        <Link
+          className="text-xl font-semibold flex gap-4 items-center"
+          href="/"
+        >
           <Logo />
-          <h1 className="text-3xl font-lexend font-[500] border-b-4 border-b-transparent hover:border-b-accent ease-linear duration-200 mt-1">Philip Nguyen</h1>
+          <h1 className="text-3xl font-lexend font-[500] border-b-4 border-b-transparent hover:border-b-accent ease-linear duration-200 mt-">
+            Philip Nguyen
+          </h1>
         </Link>
 
         <div>
-          <ul className="hidden md:flex md:items-center">
+          <ul className="hidden lg:flex lg:items-center">
             <li className="navLink">
               <Link href="/">Home</Link>
             </li>
@@ -43,12 +48,12 @@ const Navbar = () => {
             <li className="navLink">
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="bg-accent px-4 py-1 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300 mb-2">
+            <li className="bg-accent px-4 py-2 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300">
               <Link href="/#contact">Contact Me</Link>
             </li>
           </ul>
 
-          <div className="md:hidden cursor-pointer" onClick={handleNav}>
+          <div className="lg:hidden cursor-pointer" onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -57,19 +62,23 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "lg:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-full sm:w-[60%] md:w-[45%] h-screen bg-secondary p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-full sm:w-[60%] lg:w-[45%] h-screen bg-secondary p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <h1 className="text-2xl">Philip Nguyen</h1>
+              <div className="flex gap-4 items-center">
+                <Logo />
+                <h1 className="text-3xl lexend font-[500]">Philip Nguyen</h1>
+              </div>
+
               <div
                 className="rounded-full p-3 cursor-pointer bg-primary hover:bg-gray-300"
                 onClick={handleNav}
