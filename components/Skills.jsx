@@ -23,7 +23,7 @@ const Skills = () => {
         <header className="w-full flex flex-col justify-between items-center sm:flex-row">
           <h2 className="py-4">What I Can Do</h2>
           <a
-            className="bg-secondaryBtn py-2 px-4 rounded-md flex gap-4 font-semibold h-10 mt-5 border-b-4 hover:border-b-accent text-secondary"
+            className="bg-secondaryBtn py-2 px-4 rounded-md flex gap-4 font-semibold h-10 mt-5 border-b-4 hover:border-b-accent text-secondary ease-linear duration-300"
             href="/assets/resume.pdf"
             target="_blank"
             rel="noreferrer"
