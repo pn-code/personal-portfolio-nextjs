@@ -1,41 +1,44 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import workImage from "../public/assets/work.jpg"
-
 const About = () => {
   return (
-    <div id="about" className="w-full lg:h-screen p-2 flex flex-col lg:flex-row py-16 text-lg gap-12">
-      <div className="w-full flex justify-between flex-1">
+    <div id="about" className="w-full h-screen text-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center sm:justify-start">
         <div className="w-full flex flex-col gap-4 items-center justify-center sm:items-start">
           <p className="uppercase text-xl tracking-widest text-accent font-bold">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-lg text-primary">
-            I am a passionate Software Engineer with experience in full stack
-            web development. My goal is to create high-quality software products
-            that make a positive and lasting impact on people's lives.
+          <p className="py-2 text-lg sm:text-xl text-primary text-center sm:text-left">
+            I am <span className="text-accent">Philip Nguyen</span>, a
+            passionate{" "}
+            <span className="text-purple-300">Software Engineer</span> with
+            experience in{" "}
+            <span className="text-indigo-300">full stack web development</span>.
+            <br />
+            <br />I have used many front-end and back-end technologies, while
+            building my projects. I am most familiar with{" "}
+            <span className="text-amber-300">JavaScript</span>,{" "}
+            <span className="text-green-300">Node.js</span>,{" "}
+            <span className="text-blue-300">React</span>, and{" "}
+            <span className="text-gray-300">Next.js. </span>
+            <br />
+            <br />I am looking to create{" "}
+            <span className="text-amber-300">high-quality</span> software
+            products that make a{" "}
+            <span className="text-green-300">positive and lasting impact</span>{" "}
+            on people's lives. If you are in search of a{" "}
+            <span className="text-blue-300">dedicated{" "}</span>
+            and{" "}
+            <span className="text-indigo-300">self-motivated {" "}</span>
+            software developer,{" "}
+            <span className="text-purple-300">who loves learning{" "}</span>
+            look no further.
             <br />
             <br />
             In addition to my work in software engineering, I have a deep
             passion for fitness and enjoy spending quality time with my friends
             and family.
-            <br />
-            <br />
-            If you are in search of a dedicated and self-motivated software
-            developer who loves learning, look no further.
           </p>
-
-          <Link className="w-full sm:w-[180px] text-center" href="/#projects">
-            <p className="my-5 w-full text-xl font-semibold sm:text-lg sm:font-thin sm:w-[180px] px-4 py-2 bg-primaryBtn hover:bg-secondaryBtn ease-in duration-200 hover:text-primaryBtn rounded-lg hover:text-secondary-btn">
-              View My Projects
-            </p>
-          </Link>
         </div>
-      </div>
-      <div className="flex justify-center items-center rounded-md">
-        <Image className="rounded-md" src={workImage} height={500} width={500} alt="work image"/>
       </div>
     </div>
   );
