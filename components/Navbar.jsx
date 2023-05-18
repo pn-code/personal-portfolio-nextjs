@@ -129,32 +129,32 @@ const Navbar = () => {
                   Let&apos;s Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a
                       href="https://www.linkedin.com/in/pn-code/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <FaLinkedinIn />
+                      <FaLinkedinIn size={24} color="black"/>
                     </a>
                   </div>
-                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a
                       href="https://github.com/pn-code"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <FaGithub />
+                      <FaGithub size={24} color="black"/>
                     </a>
                   </div>
-                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a href="" target="_blank" rel="noreferrer">
-                      <AiOutlineMail />
+                      <AiOutlineMail size={24} color="black"/>
                     </a>
                   </div>
-                  <div className="rounded-full bg-primaryBtn p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a href="/resume" target="_blank" rel="noreferrer">
-                      <BsFillPersonLinesFill />
+                      <BsFillPersonLinesFill size={24} color="black"/>
                     </a>
                   </div>
                 </div>

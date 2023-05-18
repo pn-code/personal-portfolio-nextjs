@@ -99,8 +99,8 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <FaLinkedinIn size={24} />
+                      <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                        <FaLinkedinIn size={24} color="black"/>
                       </div>
                     </a>
 
@@ -109,8 +109,8 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-md bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <FaGithub size={24} />
+                      <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                        <FaGithub size={24} color="black"/>
                       </div>
                     </a>
 
@@ -119,8 +119,8 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-md bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <AiOutlineMail size={24} />
+                      <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                        <AiOutlineMail size={24} color="black"/>
                       </div>
                     </a>
 
@@ -129,8 +129,8 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-md bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <BsFillPersonLinesFill size={24} />
+                      <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                        <BsFillPersonLinesFill size={24} color="black"/>
                       </div>
                     </a>
                   </div>
