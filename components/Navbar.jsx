@@ -12,6 +12,7 @@ import {
 } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -23,8 +24,9 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100] bg-secondary">
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
-        <Link className="text-xl font-semibold" href="/">
-          Philip Nguyen
+        <Link className="text-xl font-semibold flex gap-4 items-center" href="/">
+          <Logo />
+          <h1 className="text-3xl font-lexend font-[500] border-b-4 border-b-transparent hover:border-b-accent ease-linear duration-200 mt-1">Philip Nguyen</h1>
         </Link>
 
         <div>
@@ -41,7 +43,7 @@ const Navbar = () => {
             <li className="navLink">
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="bg-accent px-4 py-2 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300">
+            <li className="bg-accent px-4 py-1 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300 mb-2">
               <Link href="/#contact">Contact Me</Link>
             </li>
           </ul>
@@ -83,7 +85,7 @@ const Navbar = () => {
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
-                    <AiFillHome size={22} color="white"/>
+                    <AiFillHome size={22} color="white" />
                     Home
                   </li>
                 </Link>
@@ -92,7 +94,7 @@ const Navbar = () => {
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
-                    <AiFillAlert size={22} color="white"/>
+                    <AiFillAlert size={22} color="white" />
                     About
                   </li>
                 </Link>
@@ -101,7 +103,7 @@ const Navbar = () => {
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
-                    <AiFillFire size={22} color="white"/>
+                    <AiFillFire size={22} color="white" />
                     Skills
                   </li>
                 </Link>
@@ -110,7 +112,7 @@ const Navbar = () => {
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
-                    <AiFillThunderbolt size={22} color="white"/>
+                    <AiFillThunderbolt size={22} color="white" />
                     Projects
                   </li>
                 </Link>
@@ -119,7 +121,7 @@ const Navbar = () => {
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
                   >
-                    <AiFillMessage size={22} color="white"/>
+                    <AiFillMessage size={22} color="white" />
                     Contact
                   </li>
                 </Link>
@@ -129,32 +131,32 @@ const Navbar = () => {
                   Let&apos;s Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a
                       href="https://www.linkedin.com/in/pn-code/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <FaLinkedinIn size={24} color="black"/>
+                      <FaLinkedinIn size={24} color="black" />
                     </a>
                   </div>
-                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a
                       href="https://github.com/pn-code"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <FaGithub size={24} color="black"/>
+                      <FaGithub size={24} color="black" />
                     </a>
                   </div>
-                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a href="" target="_blank" rel="noreferrer">
-                      <AiOutlineMail size={24} color="black"/>
+                      <AiOutlineMail size={24} color="black" />
                     </a>
                   </div>
-                  <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                     <a href="/resume" target="_blank" rel="noreferrer">
-                      <BsFillPersonLinesFill size={24} color="black"/>
+                      <BsFillPersonLinesFill size={24} color="black" />
                     </a>
                   </div>
                 </div>
