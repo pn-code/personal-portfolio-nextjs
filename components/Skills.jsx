@@ -10,6 +10,8 @@ import expressLogo from "../public/assets/skills/express.png";
 import nextLogo from "../public/assets/skills/nextjs.png";
 import mongoLogo from "../public/assets/skills/mongo.png";
 import tailwindLogo from "../public/assets/skills/tailwind.png";
+import Link from "next/link";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Skills = () => {
   return (
@@ -18,9 +20,21 @@ const Skills = () => {
         <p className="text-xl tracking-widest uppercase text-accent font-bold">
           Skills
         </p>
-        <h2 className="py-4">What I Can Do</h2>
+        <header className="w-full flex flex-col justify-between items-center sm:flex-row">
+          <h2 className="py-4">What I Can Do</h2>
+          <a
+            className="bg-secondaryBtn py-2 px-4 rounded-md flex gap-4 font-semibold h-10 mt-5 border-b-4 hover:border-b-accent text-secondary"
+            href="/assets/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsFillPersonLinesFill size={24} color="black" />
+            <span>My Resume</span>
+          </a>
+        </header>
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-4 py-8 rounded-lg">
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={htmlLogo} width={32} height={32} alt="HTML" />
@@ -31,7 +45,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={cssLogo} width={32} height={32} alt="CSS" />
@@ -42,7 +56,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={jsLogo} width={32} height={32} alt="JavaScript" />
@@ -53,7 +67,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={reactLogo} width={32} height={32} alt="React" />
@@ -64,7 +78,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -80,7 +94,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={nodeLogo} width={32} height={32} alt="node" />
@@ -91,7 +105,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -109,7 +123,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={mongoLogo} width={32} height={32} alt="mongo" />
@@ -119,7 +133,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4 hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -134,7 +148,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center py-2 px-4 shadow-xl bg-secondaryBtn rounded-xl hover:scale-110 ease-in duration-320">
+          <div className="flex justify-center items-center py-2 px-4 shadow-xl bg-secondaryBtn rounded-xl hover:scale-110 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={expressLogo} width={32} height={32} alt="express" />
