@@ -1,48 +1,44 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import aboutImg from "../public/assets/work.jpg"
+import Image from "next/image";
+import workImage from "../public/assets/work.jpg"
 
 const About = () => {
-    return (
-        <div
-            id="about"
-            className="w-full md:h-screen p-2 flex items-center py-16 text-lg"
-        >
-            <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-                <div className="max-w-[560px] col-span-2">
-                    <p className="uppercase text-xl tracking-widest text-indigo-600 font-semibold">
-                        About
-                    </p>
-                    <h2 className="py-4">Who I Am</h2>
-                    <p className="py-2 text-gray-100">
-                        I am a motivated, self-starter who loves to learn and
-                        apply himself.
-                    </p>
-                    <p className="py-2 text-gray-100">
-                        Outside of development, I am passionate about fitness
-                        and love spending time with my friends and family.
-                    </p>
-                    <Link href="/#projects">
-                        <p className="py-2 text-amber-400 hover:text-amber-300 underline cursor-pointer">
-                            Check out some of my latest projects
-                        </p>
-                    </Link>
-                </div>
-                <div className="w-full h-auto group m-auto bg-indigo-600 rounded-xl flex flex-col items-center justify-center p-4 hover:scale-110 ease-in duration-300">
-                    <Image
-                        src={aboutImg}
-                        width={500}
-                        height={500}
-                        alt=""
-                    />
-                    <span className="group-hover:flex hidden text-sm mt-2 hover:underline">
-                        <a rel="noreferrer" target="_blank" href="https://unsplash.com/@glenncarstenspeters">Credits to Glenn Carstens-Peters</a>
-                    </span>
-                </div>
-            </div>
+  return (
+    <div id="about" className="w-full lg:h-screen p-2 flex flex-col lg:flex-row py-16 text-lg gap-12">
+      <div className="w-full flex justify-between flex-1">
+        <div className="w-full flex flex-col gap-4 items-center justify-center sm:items-start">
+          <p className="uppercase text-xl tracking-widest text-accent font-bold">
+            About
+          </p>
+          <h2 className="py-4">Who I Am</h2>
+          <p className="py-2 text-lg text-primary">
+            I am a passionate Software Engineer with experience in full stack
+            web development. My goal is to create high-quality software products
+            that make a positive and lasting impact on people's lives.
+            <br />
+            <br />
+            In addition to my work in software engineering, I have a deep
+            passion for fitness and enjoy spending quality time with my friends
+            and family.
+            <br />
+            <br />
+            If you are in search of a dedicated and self-motivated software
+            developer who loves learning, look no further.
+          </p>
+
+          <Link className="w-full sm:w-[180px] text-center" href="/#projects">
+            <p className="my-5 w-full text-xl font-semibold sm:text-lg sm:font-thin sm:w-[180px] px-4 py-2 bg-primaryBtn hover:bg-secondaryBtn ease-in duration-200 hover:text-primaryBtn rounded-lg hover:text-secondary-btn">
+              View My Projects
+            </p>
+          </Link>
         </div>
-    );
+      </div>
+      <div className="flex justify-center items-center rounded-md">
+        <Image className="rounded-md" src={workImage} height={500} width={500} alt="work image"/>
+      </div>
+    </div>
+  );
 };
 
 export default About;

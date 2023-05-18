@@ -64,8 +64,8 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-indigo-600 font-semibold">
+      <div className="max-w-[1240px] m-auto px-2 py-16 w-full flex flex-col items-center md:items-start">
+        <p className="text-xl tracking-widest uppercase text-accent font-semibold">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
@@ -85,7 +85,7 @@ const Contact = () => {
 
               <div className="flex flex-col items-center">
                 <h2 className="py-2">Philip Nguyen</h2>
-                <p className="font-semibold text-amber-400">
+                <p className="font-semibold text-accent">
                   Full-Stack Developer
                 </p>
                 <p className="py-4">I am currently available for full-time positions.</p>
@@ -99,7 +99,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-md bg-blue-500/70 shadow-blue-500/40 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                      <div className="rounded-full bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                         <FaLinkedinIn size={24} />
                       </div>
                     </a>
@@ -109,7 +109,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-md bg-blue-500/70 shadow-blue-500/40 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                      <div className="rounded-full shadow-md bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                         <FaGithub size={24} />
                       </div>
                     </a>
@@ -119,7 +119,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-md bg-blue-500/70 shadow-blue-500/40 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                      <div className="rounded-full shadow-md bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                         <AiOutlineMail size={24} />
                       </div>
                     </a>
@@ -129,7 +129,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-md bg-blue-500/70 shadow-blue-500/40 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                      <div className="rounded-full shadow-md bg-primaryBtn p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                         <BsFillPersonLinesFill size={24} />
                       </div>
                     </a>
@@ -270,9 +270,9 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gray-800">
+            <div className="rounded-full p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gray-800">
               <HiOutlineChevronDoubleUp
-                className="m-auto text-indigo-600"
+                className="m-auto text-accent"
                 size={30}
               />
             </div>

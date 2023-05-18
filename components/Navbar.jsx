@@ -28,7 +28,7 @@ const Navbar = () => {
         </Link>
 
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex md:items-center">
             <li className="navLink">
               <Link href="/">Home</Link>
             </li>
@@ -41,8 +41,8 @@ const Navbar = () => {
             <li className="navLink">
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="navLink">
-              <Link href="/#contact">Contact</Link>
+            <li className="bg-primaryBtn px-4 py-2 rounded-lg border-2 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300">
+              <Link href="/#contact">Contact Me</Link>
             </li>
           </ul>
 

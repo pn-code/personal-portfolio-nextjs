@@ -14,133 +14,133 @@ import tailwindLogo from "../public/assets/skills/tailwind.png";
 const Skills = () => {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-indigo-600 font-semibold">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full items-center sm:items-start">
+        <p className="text-xl tracking-widest uppercase text-accent font-bold">
           Skills
         </p>
         <h2 className="py-4">What I Can Do</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-4 py-8 rounded-lg">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={htmlLogo} width={64} height={64} alt="HTML" />
+                <Image src={htmlLogo} width={32} height={32} alt="HTML" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
+                <h3 className="text-sm text-secondary">HTML</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={cssLogo} width={64} height={64} alt="CSS" />
+                <Image src={cssLogo} width={32} height={32} alt="CSS" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>CSS</h3>
+                <h3 className="text-sm text-secondary">CSS</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={jsLogo} width={64} height={64} alt="JavaScript" />
+                <Image src={jsLogo} width={32} height={32} alt="JavaScript" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>JavaScript</h3>
+                <h3 className="text-sm text-secondary">JavaScript</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={reactLogo} width={64} height={64} alt="React" />
+                <Image src={reactLogo} width={32} height={32} alt="React" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>React</h3>
+                <h3 className="text-sm text-secondary">React</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
                   src={firebaseLogo}
-                  width={64}
-                  height={64}
+                  width={32}
+                  height={32}
                   alt="Firebase"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Firebase</h3>
+                <h3 className="text-sm text-secondary">Firebase</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={nodeLogo} width={64} height={64} alt="node" />
+                <Image src={nodeLogo} width={32} height={32} alt="node" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Node</h3>
+                <h3 className="text-sm text-secondary">Node</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto bg-gray-50 rounded-sm p-2">
+              <div className="m-auto">
                 <Image
                   className="z-[100]"
                   src={nextLogo}
-                  width={48}
-                  height={48}
+                  width={32}
+                  height={32}
                   alt="NextJS"
                   color="white"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>NextJS</h3>
+                <h3 className="text-sm text-secondary">NextJS</h3>
               </div>
             </div>
           </div>
 
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={mongoLogo} width={64} height={64} alt="mongo" />
+                <Image src={mongoLogo} width={32} height={32} alt="mongo" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>MongoDB</h3>
+                <h3 className="text-sm text-secondary">MongoDB</h3>
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 shadow-xl bg-secondaryBtn rounded-xl px-4">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
                   src={tailwindLogo}
-                  width={64}
-                  height={64}
+                  width={32}
+                  height={32}
                   alt="tailwind"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind</h3>
+                <h3 className="text-sm text-secondary">Tailwind</h3>
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl bg-gray-800/50 rounded-xl hover:scale-110 ease-in duration-300">
+          <div className="flex justify-center items-center py-2 px-4 shadow-xl bg-secondaryBtn rounded-xl hover:scale-110 ease-in duration-320">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto bg-slate-50 p-2 rounded-sm">
-                <Image src={expressLogo} width={48} height={48} alt="express" />
+              <div className="m-auto">
+                <Image src={expressLogo} width={32} height={32} alt="express" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Express</h3>
+                <h3 className="text-sm text-secondary">Express</h3>
               </div>
             </div>
           </div>

@@ -7,8 +7,8 @@ import restaurantPreview from "../public/assets/projects/restaurant-menu.png";
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-indigo-600 font-semibold">
+      <div className="max-w-[1240px] mx-auto px-2 py-16 flex flex-col items-center md:items-start">
+        <p className="text-xl tracking-widest uppercase text-accent font-bold">
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>

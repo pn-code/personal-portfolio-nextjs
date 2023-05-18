@@ -7,13 +7,13 @@ const Main = () => {
     return (
         <div className="w-full h-screen text-center">
             <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-                <div>
-                    <h1 className="py-4 text-gray-50">
+                <div className="text-primary">
+                    <h1 className="py-4">
                         Hi, I&apos;m {" "}
-                        <span className="text-indigo-600">Philip Nguyen,</span>
+                        <span className="text-accent">Philip Nguyen,</span>
                     </h1>
-                    <h2 className="py-4 text-gray-50">
-                        A Full-Stack Web Developer
+                    <h2 className="py-4">
+                        A Full-Stack Developer
                     </h2>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4 pt-8">
                         <a
@@ -21,7 +21,7 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg bg-gray-200 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                            <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                 <FaLinkedinIn size={24} color="black"/>
                             </div>
                         </a>
@@ -31,7 +31,7 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg bg-gray-200 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                            <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                 <FaGithub size={24} color="black"/>
                             </div>
                         </a>
@@ -41,7 +41,7 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg bg-gray-200 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                            <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                 <AiOutlineMail size={24} color="black"/>
                             </div>
                         </a>
@@ -51,7 +51,7 @@ const Main = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="rounded-full shadow-lg bg-gray-300 shadow-gray-700 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                            <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
                                 <BsFillPersonLinesFill size={24} color="black"/>
                             </div>
                         </a>
