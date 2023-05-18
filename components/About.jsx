@@ -8,14 +8,14 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-lg sm:text-xl text-primary text-center sm:text-left">
-            I am <span className="text-accent">Philip Nguyen</span>, a
-            passionate{" "}
+            I am a passionate{" "}
             <span className="text-purple-300">Software Engineer</span> with
             experience in{" "}
-            <span className="text-indigo-300">full stack web development</span>.
+            <span className="text-indigo-300">Full Stack Web Development</span>.
             <br />
-            <br />I have used many front-end and back-end technologies, while
-            building my projects. I am most familiar with{" "}
+            <br />
+            While I have used many front-end and back-end technologies to build
+            my projects, I am most familiar with {" "}
             <span className="text-amber-300">JavaScript</span>,{" "}
             <span className="text-green-300">Node.js</span>,{" "}
             <span className="text-blue-300">React</span>, and{" "}
@@ -26,11 +26,10 @@ const About = () => {
             products that make a{" "}
             <span className="text-green-300">positive and lasting impact</span>{" "}
             on people&apos;s lives. If you are in search of a{" "}
-            <span className="text-blue-300">dedicated{" "}</span>
-            and{" "}
-            <span className="text-indigo-300">self-motivated {" "}</span>
+            <span className="text-blue-300">dedicated </span>
+            and <span className="text-indigo-300">self-motivated </span>
             software developer,{" "}
-            <span className="text-purple-300">who loves learning{" "}</span>
+            <span className="text-purple-300">who loves learning </span>
             look no further.
             <br />
             <br />
