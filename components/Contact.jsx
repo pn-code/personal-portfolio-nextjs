@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full flex flex-col items-center md:items-start">
+      <div className="max-w-[1240px] m-auto px-2 py-16 w-full flex flex-col items-center sm:items-start">
         <p className="text-xl tracking-widest uppercase text-accent font-semibold">
           Contact
         </p>
