@@ -268,7 +268,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center py-12">
+        <div className="w-full flex justify-center py-16">
           <Link href="/">
             <div className="rounded-full p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gray-800">
               <HiOutlineChevronDoubleUp
