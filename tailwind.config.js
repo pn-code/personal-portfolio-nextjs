@@ -13,6 +13,9 @@ module.exports = {
         secondaryBtn: "#ededed",
         accent: "#428bff",
       },
+      fontFamily: {
+        lexend: ['Lexend', 'sans-serif'],
+      },
     },
   },
   plugins: [],
