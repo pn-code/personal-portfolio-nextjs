@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import { useState } from "react";
 import Image from "next/image";
 import axios from "axios";
 import profileImg from "../public/assets/profile.png";
@@ -8,7 +7,6 @@ import profileImg from "../public/assets/profile.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -63,12 +61,15 @@ const Contact = () => {
   ].every(Boolean);
 
   return (
-    <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full flex flex-col items-center sm:items-start">
-        <p className="text-xl tracking-widest uppercase text-accent font-semibold">
-          Contact
-        </p>
-        <h2 className="py-4">Get In Touch</h2>
+    <div id="contact" className="w-full h-full mt-28 mb-10">
+      <div className="max-w-[1240px] mx-auto flex flex-col h-full sm:items-start">
+        <header className="w-full flex flex-col justify-between items-center sm:items-start">
+          <h1 className="text-xl tracking-widest uppercase text-accent font-bold">
+            Contact
+          </h1>
+          <h2 className="py-4">Get In Touch</h2>
+        </header>
+
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Left-side */}
           <div className="col-span-3 bg-blue-900/40 lg:col-span-2 w-full h-full rounded-xl p-4">
@@ -88,7 +89,9 @@ const Contact = () => {
                 <p className="font-semibold text-accent">
                   Full-Stack Developer
                 </p>
-                <p className="py-4">I am currently available for full-time positions.</p>
+                <p className="py-4">
+                  I am currently available for full-time positions.
+                </p>
                 <div className="w-full flex flex-col items-center">
                   <p className="uppercase pt-8 font-semibold">
                     Connect With Me
@@ -100,7 +103,7 @@ const Contact = () => {
                       rel="noreferrer"
                     >
                       <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <FaLinkedinIn size={24} color="black"/>
+                        <FaLinkedinIn size={24} color="black" />
                       </div>
                     </a>
 
@@ -109,8 +112,8 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <FaGithub size={24} color="black"/>
+                      <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                        <FaGithub size={24} color="black" />
                       </div>
                     </a>
 
@@ -119,8 +122,8 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div  className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <AiOutlineMail size={24} color="black"/>
+                      <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
+                        <AiOutlineMail size={24} color="black" />
                       </div>
                     </a>
 
@@ -130,7 +133,7 @@ const Contact = () => {
                       rel="noreferrer"
                     >
                       <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                        <BsFillPersonLinesFill size={24} color="black"/>
+                        <BsFillPersonLinesFill size={24} color="black" />
                       </div>
                     </a>
                   </div>
@@ -160,7 +163,7 @@ const Contact = () => {
                       Name:
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
+                      className="border-2 rounded-lg p-1 flex border-gray-400 text-black"
                       id="name"
                       minLength={3}
                       maxLength={30}
@@ -183,7 +186,7 @@ const Contact = () => {
                       Phone Number:
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
+                      className="border-2 rounded-lg p-1 flex border-gray-400 text-black"
                       id="phone_number"
                       name="phone_number"
                       type="tel"
@@ -203,7 +206,7 @@ const Contact = () => {
                       Email:
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
+                      className="border-2 rounded-lg p-1 flex border-gray-400 text-black"
                       id="email"
                       name="email"
                       type="email"
@@ -220,7 +223,7 @@ const Contact = () => {
                       Subject
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-400 text-black"
+                      className="border-2 rounded-lg p-1 flex border-gray-400 text-black"
                       id="subject"
                       name="subject"
                       type="text"
@@ -241,8 +244,8 @@ const Contact = () => {
                     Message:
                   </label>
                   <textarea
-                    className="border-2 rounded-lg p-3 flex border-gray-400 text-black resize-none"
-                    rows={10}
+                    className="border-2 rounded-lg p-1 flex border-gray-400 text-black resize-none"
+                    rows={4}
                     id="message"
                     name="message"
                     placeholder="Message"
@@ -267,16 +270,6 @@ const Contact = () => {
               </form>
             </div>
           </div>
-        </div>
-        <div className="w-full flex justify-center py-16">
-          <Link href="/">
-            <div className="rounded-full p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gray-800">
-              <HiOutlineChevronDoubleUp
-                className="m-auto text-accent"
-                size={30}
-              />
-            </div>
-          </Link>
         </div>
       </div>
     </div>

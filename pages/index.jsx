@@ -22,12 +22,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.svg"/>
             </Head>
             <Navbar />
+            
             <main className="px-4">
                 <Main />
-                <About />
-                <Skills />
-                <Projects />
-                <Contact />
             </main>
         </>
     );

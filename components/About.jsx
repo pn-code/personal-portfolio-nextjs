@@ -1,12 +1,15 @@
 const About = () => {
   return (
-    <div id="about" className="w-full h-screen text-center mt-10 mb-32">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center sm:justify-start">
-        <div className="w-full flex flex-col gap-4 items-center justify-center sm:items-start">
-          <p className="uppercase text-xl tracking-widest text-accent font-bold">
-            About
-          </p>
-          <h2 className="py-4">Who I Am</h2>
+    <div id="about" className="w-full h-[calc(100vh-100px)] mt-28">
+      <div className="max-w-[1240px] w-full h-full mx-auto flex">
+        <div className="w-full flex flex-col gap-4 sm:items-start">
+          <header className="w-full flex flex-col justify-between items-center sm:items-start">
+            <h1 className="text-xl tracking-widest uppercase text-accent font-bold">
+              About
+            </h1>
+            <h2 className="py-4">Who I Am</h2>
+          </header>
+
           <p className="py-2 text-lg sm:text-xl text-primary text-center sm:text-left">
             I am a passionate{" "}
             <span className="text-purple-300">Software Engineer</span> with
@@ -15,7 +18,7 @@ const About = () => {
             <br />
             <br />
             While I have used many front-end and back-end technologies to build
-            my projects, I am most familiar with {" "}
+            my projects, I am most familiar with{" "}
             <span className="text-amber-300">JavaScript</span>,{" "}
             <span className="text-green-300">Node.js</span>,{" "}
             <span className="text-blue-300">React</span>, and{" "}

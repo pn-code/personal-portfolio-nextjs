@@ -4,7 +4,6 @@ import {
   AiOutlineMenu,
   AiOutlineClose,
   AiOutlineMail,
-  AiFillHome,
   AiFillAlert,
   AiFillFire,
   AiFillThunderbolt,
@@ -12,7 +11,6 @@ import {
 } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "./Logo";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,8 +26,7 @@ const Navbar = () => {
           className="text-xl font-semibold flex gap-4 items-center"
           href="/"
         >
-          <Logo />
-          <h1 className="text-3xl font-lexend font-[500] border-b-4 border-b-transparent hover:border-b-accent ease-linear duration-200 mt-">
+          <h1 className="text-2xl font-lexend font-[500] border-b-4 border-b-transparent hover:border-b-accent ease-linear duration-200 mt-">
             Philip Nguyen
           </h1>
         </Link>
@@ -37,19 +34,21 @@ const Navbar = () => {
         <div>
           <ul className="hidden lg:flex lg:items-center">
             <li className="navLink">
-              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="navLink">
-              <Link href="/#about">About</Link>
+              <Link href="/skills">Skills</Link>
             </li>
             <li className="navLink">
-              <Link href="/#skills">Skills</Link>
+              <Link href="/projects">Projects</Link>
             </li>
-            <li className="navLink">
-              <Link href="/#projects">Projects</Link>
+            <li className="bg-accent/90 px-3 py-2 rounded-sm border-4 border-transparent hover:bg-accent/70 font-bold ml-7 ease-in-out duration-300 mb-2">
+              <Link href="/contact">CONTACT ME</Link>
             </li>
-            <li className="bg-accent/90 px-4 py-1 rounded-lg border-4 border-transparent hover:border-accent hover:bg-secondary font-bold ml-5 ease-in-out duration-300 mb-2">
-              <Link href="/#contact">Contact Me</Link>
+            <li className="hover:bg-gray-700/90 px-3 py-[10px] rounded-sm border-2 font-bold ml-7 ease-in-out duration-300 mb-2">
+              <a href="/assets/resume.pdf" target="_blank" rel="noreferrer">
+                RESUME
+              </a>
             </li>
           </ul>
 
@@ -75,7 +74,6 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <div className="flex gap-4 items-center">
-                <Logo />
                 <h1 className="text-3xl lexend font-[500]">Philip Nguyen</h1>
               </div>
 
@@ -89,16 +87,7 @@ const Navbar = () => {
 
             <div className="py-4 flex flex-col mt-[8%]">
               <ul className="uppercase">
-                <Link href="/">
-                  <li
-                    onClick={() => setNav(false)}
-                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
-                  >
-                    <AiFillHome size={22} color="white" />
-                    Home
-                  </li>
-                </Link>
-                <Link href="/#about">
+                <Link href="/about">
                   <li
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
@@ -107,7 +96,7 @@ const Navbar = () => {
                     About
                   </li>
                 </Link>
-                <Link href="/#skills">
+                <Link href="/skills">
                   <li
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
@@ -116,7 +105,7 @@ const Navbar = () => {
                     Skills
                   </li>
                 </Link>
-                <Link href="/#projects">
+                <Link href="/projects">
                   <li
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
@@ -125,7 +114,7 @@ const Navbar = () => {
                     Projects
                   </li>
                 </Link>
-                <Link href="/#contact">
+                <Link href="/contact">
                   <li
                     onClick={() => setNav(false)}
                     className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
@@ -134,6 +123,15 @@ const Navbar = () => {
                     Contact
                   </li>
                 </Link>
+                <a href="/assets/resume.pdf" target="_blank" rel="noreferrer">
+                  <li
+                    onClick={() => setNav(false)}
+                    className="py-4 text-xl font-semibold text-primary flex gap-4 items-center border-b-4 border-transparent hover:border-accent w-[160px]"
+                  >
+                    <BsFillPersonLinesFill size={22} color="white" />
+                    Resume
+                  </li>
+                </a>
               </ul>
               <div className="pt-[20%]">
                 <p className="uppercase tracking-widest text-accent font-semibold">
