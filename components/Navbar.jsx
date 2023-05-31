@@ -74,7 +74,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <div className="flex gap-4 items-center">
-                <h1 className="text-3xl lexend font-[500]">Philip Nguyen</h1>
+                <Link href="/" onClick={() => setNav(false)}><h1 className="text-3xl lexend font-[500] hover:text-accent">Philip Nguyen</h1></Link>
               </div>
 
               <div
