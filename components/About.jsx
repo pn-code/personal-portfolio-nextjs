@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div id="about" className="w-full h-[calc(100vh-100px)] mt-28">
+    <div id="about" className="w-full h-[calc(100vh-130px)] mt-28">
       <div className="max-w-[1240px] w-full h-full mx-auto flex">
         <div className="w-full flex flex-col gap-4 sm:items-start">
           <header className="w-full flex flex-col justify-between items-center sm:items-start">

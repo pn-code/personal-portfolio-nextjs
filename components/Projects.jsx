@@ -35,7 +35,7 @@ const allProjects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full h-full mt-28 mb-10">
+    <div id="projects" className="w-full h-full mt-28 mb-10 px-2">
       <div className="max-w-[1240px] mx-auto flex flex-col h-full sm:items-start">
         <header className="w-full flex flex-col justify-between items-center sm:items-start">
           <h1 className="text-xl tracking-widest uppercase text-accent font-bold">

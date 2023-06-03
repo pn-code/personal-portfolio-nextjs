@@ -61,8 +61,8 @@ const Contact = () => {
   ].every(Boolean);
 
   return (
-    <div id="contact" className="w-full h-full mt-28 mb-10">
-      <div className="max-w-[1240px] mx-auto flex flex-col h-full sm:items-start">
+    <div id="contact" className="w-full h-[calc(100vh-130px)] mt-28 mb-10 px-2">
+      <div className="max-w-[1240px] mx-auto flex flex-col h-full items-center">
         <header className="w-full flex flex-col justify-between items-center sm:items-start">
           <h1 className="text-xl tracking-widest uppercase text-accent font-bold">
             Contact
@@ -174,7 +174,7 @@ const Contact = () => {
                       onChange={(e) => setName(e.target.value)}
                     />
                     <span className="text-xs text-gray-200 pt-2 p-1">
-                      Name should be more than 3 characters but less than 30
+                      At least 3 characters but less than 30
                     </span>
                   </div>
 
@@ -197,7 +197,7 @@ const Contact = () => {
                       onChange={(e) => setPhoneNumber(e.target.value)}
                     />
                     <span className="text-xs text-gray-200 pt-2 p-1">
-                      Phone Number should be formatted as shown: (123) 456-7890
+                      Format: (123) 456-7890
                     </span>
                   </div>
 
@@ -216,6 +216,9 @@ const Contact = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
+                    <span className="text-xs text-gray-200 pt-2 p-1">
+                      Enter a valid email
+                    </span>
                   </div>
 
                   <div className="flex flex-col py-2">
@@ -234,8 +237,7 @@ const Contact = () => {
                       onChange={(e) => setSubject(e.target.value)}
                     />
                     <span className="text-xs text-gray-200 pt-2 p-1">
-                      Subject should be more than 3 characters, but less than
-                      30.
+                      More than 3 characters, but less than 30
                     </span>
                   </div>
                 </div>

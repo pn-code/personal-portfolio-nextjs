@@ -25,12 +25,12 @@ const Skills = () => {
     "Postman",
     "Prisma",
     "Vercel",
-    "PlanetScale",
+    "PlanetScale"
   ];
-  const otherSkills = ["RESTful API", "TRPC", "GraphQL", "MVC Architecture"];
+  const otherSkills = ["RESTful API", "TRPC", "GraphQL", "MVC Architecture", "Zod"];
 
   return (
-    <div id="skills" className="w-full h-[calc(100vh-100px)] mt-28">
+    <div id="skills" className="w-full h-[calc(100vh-130px)] mt-28">
       <div className="max-w-[1240px] mx-auto flex flex-col h-full sm:items-start">
         <header className="w-full flex flex-col justify-between items-center sm:items-start">
           <h1 className="text-xl tracking-widest uppercase text-accent font-bold">
