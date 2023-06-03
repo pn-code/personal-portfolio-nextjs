@@ -16,8 +16,18 @@ const Skills = () => {
     "MongoDB",
     "PostgreSQL",
     "Firebase",
+    "SQL"
   ];
-  const tools = ["Git", "VSCode", "GitHub", "Postman"];
+  const tools = [
+    "Git",
+    "VSCode",
+    "GitHub",
+    "Postman",
+    "Prisma",
+    "Vercel",
+    "PlanetScale",
+  ];
+  const otherSkills = ["RESTful API", "TRPC", "GraphQL", "MVC Architecture"];
 
   return (
     <div id="skills" className="w-full h-[calc(100vh-100px)] mt-28">
@@ -54,6 +64,16 @@ const Skills = () => {
             <h3 className="text-lg mb-2">Tools</h3>
             <div className="flex gap-4 flex-wrap">
               {tools.map((skill) => (
+                <SkillCard skillName={skill} key={skill} />
+              ))}
+            </div>
+          </section>
+
+          {/* Other Skills */}
+          <section>
+            <h3 className="text-lg mb-2">Other Skills</h3>
+            <div className="flex gap-4 flex-wrap">
+              {otherSkills.map((skill) => (
                 <SkillCard skillName={skill} key={skill} />
               ))}
             </div>
