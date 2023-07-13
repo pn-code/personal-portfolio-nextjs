@@ -13,7 +13,7 @@ export default function ProjectCard({
 }) {
     console.log("imageSrc")
   return (
-    <article className="w-full bg-gray-800 p-4 rounded-sm flex md:justify-between items-center flex-col md:flex-row justify-center">
+    <article className="w-full bg-gray-900/90 p-4 rounded-sm flex md:justify-between items-center flex-col md:flex-row justify-center">
       <section className="flex flex-col gap-4 flex-[3]">
         <h3 className="text-xl">{title}</h3>
         <p className="text-[16px]">{description}</p>

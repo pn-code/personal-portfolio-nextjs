@@ -72,7 +72,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Left-side */}
-          <div className="col-span-3 bg-blue-900/40 lg:col-span-2 w-full h-full rounded-xl p-4">
+          <div className="col-span-3 bg-gray-900/90 lg:col-span-2 w-full h-full rounded-xl p-4">
             <div className="h-full flex flex-col items-center">
               <div className="w-full h-[320px] flex justify-center">
                 <Image
@@ -143,7 +143,7 @@ const Contact = () => {
           </div>
 
           {/* Right-side */}
-          <div className="col-span-3 w-full h-auto bg-blue-900/40 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto bg-gray-900/90 rounded-xl lg:p-4">
             <h3 className="text-center text-2xl mt-5">Contact Form</h3>
             {messageSent && (
               <span className="flex justify-center text-md font-semibold mt-2 py-1 bg-blue-500 rounded-lg text-white">

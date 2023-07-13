@@ -1,4 +1,3 @@
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import SkillCard from "./SkillCard";
 
 const Skills = () => {
@@ -6,9 +5,11 @@ const Skills = () => {
     "HTML",
     "CSS",
     "JavaScript",
-    "React",
+    "TypeScript",
+    "React.js",
     "TailwindCSS",
     "Next.js",
+    "Redux"
   ];
   const backEndSkills = [
     "Node.js",
@@ -20,14 +21,11 @@ const Skills = () => {
   ];
   const tools = [
     "Git",
-    "VSCode",
     "GitHub",
     "Postman",
-    "Prisma",
     "Vercel",
-    "PlanetScale"
   ];
-  const otherSkills = ["RESTful API", "TRPC", "GraphQL", "MVC Architecture", "Zod"];
+  const otherSkills = ["REST API", "TRPC", "GraphQL", "AGILE/SCRUM"];
 
   return (
     <div id="skills" className="w-full h-[calc(100vh-130px)] mt-28">

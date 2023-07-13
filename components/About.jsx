@@ -10,7 +10,7 @@ const About = () => {
             <h2 className="py-4">Who I Am</h2>
           </header>
 
-          <p className="py-2 text-lg sm:text-xl text-primary text-center sm:text-left">
+          <p className="text-lg sm:text-xl text-primary text-center sm:text-left bg-gray-900/90 px-5 py-10 rounded-md">
             I am a passionate{" "}
             <span className="text-purple-300">Software Engineer</span> with
             experience in{" "}
