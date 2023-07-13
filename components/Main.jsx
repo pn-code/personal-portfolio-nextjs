@@ -6,8 +6,8 @@ import Image from "next/image";
 const Main = () => {
     return (
         <div className="w-full min-h-[100vh] text-center custom-bg flex items-center justify-center">
-            <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-                <div className="sm:mt-20 flex rounded-md bg-gray-900/90 px-10 py-16 gap-10 flex-col items-center sm:flex-row sm:items-start">
+            <div className="max-w-[1240px] w-full h-full mx-auto flex justify-center items-center">
+                <div className="mt-20 flex rounded-md bg-gray-900/90 px-10 py-6 sm:py-16 gap-10 flex-col items-center sm:flex-row sm:items-start">
                     <Image className="rounded-md" src="/assets/profile.png" alt="Philip Nguyen Profile Picture" width={220} height={100}/>
                     <div className="text-primary">
                         <h1 className="text-2xl sm:text-5xl sm:py-4 text-accent">Philip Nguyen</h1>
