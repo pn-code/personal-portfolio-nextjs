@@ -133,41 +133,6 @@ const Navbar = () => {
                   </li>
                 </a>
               </ul>
-              <div className="pt-[20%]">
-                <p className="uppercase tracking-widest text-accent font-semibold">
-                  Let&apos;s Connect
-                </p>
-                <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                    <a
-                      href="https://www.linkedin.com/in/pn-code/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaLinkedinIn size={24} color="black" />
-                    </a>
-                  </div>
-                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                    <a
-                      href="https://github.com/pn-code"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaGithub size={24} color="black" />
-                    </a>
-                  </div>
-                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                    <a href="" target="_blank" rel="noreferrer">
-                      <AiOutlineMail size={24} color="black" />
-                    </a>
-                  </div>
-                  <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                    <a href="/resume" target="_blank" rel="noreferrer">
-                      <BsFillPersonLinesFill size={24} color="black" />
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
