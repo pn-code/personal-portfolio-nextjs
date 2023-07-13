@@ -21,7 +21,7 @@ const Login = () => {
   };
 
   return (
-    <div className="w-full h-[600px] flex flex-col justify-center items-center pt-[80px]">
+    <div className="w-full min-h-[100vh] flex flex-col justify-center items-center pt-[80px] bg-gray-900/90">
       <h1 className="mb-8">Login</h1>
       {error && (
         <span className="text-red-500 font-semibold pb-4">
@@ -32,14 +32,14 @@ const Login = () => {
         <input
           onChange={(e) => setUsername(e.target.value)}
           value={username}
-          className="p-2 rounded-md w-72"
+          className="p-2 rounded-md w-72 text-black"
           type="text"
           placeholder="username"
         />
         <input
           onChange={(e) => setPassword(e.target.value)}
           value={password}
-          className="p-2 rounded-md w-72"
+          className="p-2 rounded-md w-72 text-black"
           type="password"
           placeholder="password"
         />
