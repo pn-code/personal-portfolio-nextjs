@@ -25,7 +25,7 @@ const allProjects = [
     id: 3,
     title: "Bug Tracker",
     githubLink: "https://github.com/pn-code/bug-tracker",
-    demo: null,
+    demo: "https://bug-tracker-blue.vercel.app/",
     description:
       "The Bug Tracker is a Next.js project designed to keep track of bugs and monitor progress made towards fixing them across multiple projects. It provides a user-friendly interface for managing projects, tracking issues, and facilitating communication among team members.",
     skills: ["Next.js", "React", "TailwindCSS", "PostgreSQL"],
