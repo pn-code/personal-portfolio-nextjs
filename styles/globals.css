@@ -11,14 +11,9 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-image: url("/assets/bg.jpg");
-  background-position: center;
-}
-
 @layer base {
   body {
-    @apply text-primary tracking-wide;
+    @apply bg-[#272727] text-primary tracking-wide;
   }
 
   h1,
