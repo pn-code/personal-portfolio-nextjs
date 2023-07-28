@@ -7,14 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#f6f5f4",
-        secondary: "#060505",
-        primaryBtn: "#5125b6",
+        primary: "#000000",
+        secondary: "#FFFFFF",
+        primaryBtn: "#3687FF",
         secondaryBtn: "#ededed",
         accent: "#428bff",
       },
       fontFamily: {
-        lexend: ['Lexend', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
