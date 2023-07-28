@@ -11,12 +11,13 @@ export default function ProjectCard({
   skills,
   imageSrc
 }) {
-    console.log("imageSrc")
+
   return (
-    <article className="w-full bg-gray-900/90 p-4 rounded-sm flex md:justify-between items-center flex-col md:flex-row justify-center">
+    <article className="w-full rounded-sm flex md:justify-between items-center flex-col md:flex-row justify-center gap-8">
+      {/* Left Side */}
       <section className="flex flex-col gap-4 flex-[3]">
         <h3 className="text-xl">{title}</h3>
-        <p className="text-[16px]">{description}</p>
+        <p className="text-sm sm:text-[14px]">{description}</p>
 
         <section className="flex flex-col gap-2 text-[16px]">
           <h4>Skills Used: </h4>
@@ -31,30 +32,30 @@ export default function ProjectCard({
       {/* Right Side */}
       <section className="flex flex-col justify-between h-full w-full flex-[1] items-center gap-4 mt-5 md:mt-0">
         <Image className="rounded-md w-full" src={imageSrc} width={300} height={300} alt={`${title} image`}/>
-      <section className="flex gap-4 mb-2">
+      <section className="flex gap-2 mb-2 w-full">
           <a
             target="_blank"
             rel="noreferrer"
-            className="flex gap-4 items-center bg-indigo-700 hover:bg-indigo-600 py-2 px-4 rounded-md justify-center"
+            className="w-full flex gap-4 items-center bg-indigo-700 hover:bg-indigo-600 py-2 px-4 rounded-sm justify-center"
             href={githubLink}
           >
-            <BsCodeSquare size={30} />
-            <span className="text-[16px]">Code</span>
+            <BsCodeSquare size={30} color="white"/>
+            <span className="text-[16px] text-secondary">Code</span>
           </a>
           {demo ? (
             <a
               target="_blank"
               rel="noreferrer"
-              className="flex gap-4 items-center bg-amber-500 hover:bg-amber-400 py-2 px-4 rounded-md justify-center"
+              className="w-full flex gap-4 items-center bg-amber-500 hover:bg-amber-400 py-2 px-4 rounded-sm justify-center"
               href={demo}
             >
-              <BsLink45Deg size={30} />
-              <span className="text-[16px]">Demo</span>
+              <BsLink45Deg size={30} color="white"/>
+              <span className="text-[16px] text-secondary">Demo</span>
             </a>
           ) : (
             <span className="flex gap-4 items-center bg-gray-500 hover:bg-gray-400 py-2 px-4 rounded-md justify-center">
-              <BsLink45Deg size={30} />
-              <span className="text-[16px]">Demo</span>
+              <BsLink45Deg size={30} color="white"/>
+              <span className="text-[16px] text-secondary">Demo</span>
             </span>
           )}
         </section>
