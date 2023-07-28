@@ -35,16 +35,9 @@ const allProjects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full h-full mt-28 mb-10 px-2">
-      <div className="max-w-[1240px] mx-auto flex flex-col h-full sm:items-start">
-        <header className="w-full flex flex-col justify-between items-center sm:items-start">
-          <h1 className="text-xl tracking-widest uppercase text-accent font-bold">
-            Projects
-          </h1>
-          <h2 className="py-4">What I&apos;ve Built</h2>
-        </header>
-
-        <div className="flex flex-col gap-4">
+    <div id="projects" className="w-full h-full sm:px-[20%] mb-10">
+      <div className="flex flex-col h-full">
+        <div className="w-full flex flex-col gap-8">
           {allProjects.map((project) => (
             <ProjectCard
               key={project.id}
