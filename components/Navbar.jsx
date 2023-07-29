@@ -4,16 +4,16 @@ const Navbar = () => {
     return (
         <div className="fixed w-full h-20 z-[100] bg-secondary">
             <div className="flex flex-col gap-2 sm:flex-row sm:justify-between justify-center items-center w-full h-full sm:px-[20%]">
-                <a
+                <Link
                     className="text-xl font-semibold flex gap-4 items-center"
                     href="/"
                 >
                     <h1 className="text-lg font-bold">Philip Nguyen</h1>
-                </a>
+                </Link>
 
                 <ul className="flex gap-4 text-primaryBtn">
                     <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
-                        <a href="/">Portfolio</a>
+                        <Link href="/">Portfolio</Link>
                     </li>
                     <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
                         <a
