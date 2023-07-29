@@ -14,7 +14,7 @@ module.exports = {
         accent: "#428bff",
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
     },
   },
