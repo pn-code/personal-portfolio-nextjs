@@ -17,7 +17,7 @@ export default function ProjectCard({
       {/* Left Side */}
       <section className="flex flex-col gap-4 flex-[3]">
         <h3 className="text-xl">{title}</h3>
-        <p className="text-sm sm:text-[14px]">{description}</p>
+        <p className="text-sm sm:text-[16px]">{description}</p>
 
         <section className="flex flex-col gap-2 text-[16px]">
           <h4>Skills Used: </h4>

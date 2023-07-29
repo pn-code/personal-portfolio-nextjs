@@ -35,7 +35,7 @@ const allProjects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full h-full sm:px-[20%] mb-10">
+    <div id="projects" className="w-full h-full sm:px-[20%] mb-20">
       <div className="flex flex-col h-full">
         <div className="w-full flex flex-col gap-8">
           {allProjects.map((project) => (
