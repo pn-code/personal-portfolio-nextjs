@@ -1,49 +1,31 @@
 const About = () => {
-  return (
-    <div id="about" className="w-full h-[calc(100vh-130px)] mt-28">
-      <div className="max-w-[1240px] w-full h-full mx-auto flex">
-        <div className="w-full flex flex-col gap-4 sm:items-start">
-          <header className="w-full flex flex-col justify-between items-center sm:items-start">
-            <h1 className="text-xl tracking-widest uppercase text-accent font-bold">
-              About
-            </h1>
-            <h2 className="py-4">Who I Am</h2>
-          </header>
+    return (
+        <div id="about" className="w-full h-[calc(100vh-130px)] sm:px-[20%]">
+            <div className="max-w-[1240px] w-full h-full mx-auto flex">
+                <div className="w-full flex flex-col gap-2 sm:gap-4 justify-center">
+                    <h1 className="text-xl text-primary font-bold text-center">
+                        My Portfolio
+                    </h1>
+                    <span className="border-b-primaryBtn border-b-2 sm:border-b-4"></span>
 
-          <p className="text-lg sm:text-xl text-primary text-center sm:text-left bg-gray-900/90 px-5 py-10 rounded-md">
-            I am a passionate{" "}
-            <span className="text-purple-300">Software Engineer</span> with
-            experience in{" "}
-            <span className="text-indigo-300">Full Stack Web Development</span>.
-            <br />
-            <br />
-            While I have used many front-end and back-end technologies to build
-            my projects, I am most familiar with{" "}
-            <span className="text-amber-300">JavaScript</span>,{" "}
-            <span className="text-green-300">Node.js</span>,{" "}
-            <span className="text-blue-300">React</span>, and{" "}
-            <span className="text-gray-300">Next.js. </span>
-            <br />
-            <br />I am looking to create{" "}
-            <span className="text-amber-300">high-quality</span> software
-            products that make a{" "}
-            <span className="text-green-300">positive and lasting impact</span>{" "}
-            on people&apos;s lives. If you are in search of a{" "}
-            <span className="text-blue-300">dedicated </span>
-            and <span className="text-indigo-300">self-motivated </span>
-            software developer,{" "}
-            <span className="text-purple-300">who loves learning </span>
-            look no further.
-            <br />
-            <br />
-            In addition to my work in software engineering, I have a deep
-            passion for fitness and enjoy spending quality time with my friends
-            and family.
-          </p>
+                    <p className="text-sm sm:text-lg text-primary text-left rounded-md">
+                        I’m a Software Engineer, who loves creating aesthetic,
+                        functional, and responsive websites. I have a strong
+                        understanding of{" "}
+                        <span className="text-primaryBtn">
+                            HTML, CSS, JavaScript/TypeScript, and SQL.
+                        </span>{" "}
+                        I have extensive experience building full-stack apps
+                        with{" "}
+                        <span className="text-primaryBtn">
+                            React.js, Node.js, Next.js,
+                        </span>{" "}
+                        among other technologies.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default About;

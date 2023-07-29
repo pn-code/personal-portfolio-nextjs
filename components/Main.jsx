@@ -1,63 +1,18 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import Image from "next/image";
+import WebAnimation from "./animations/WebAnimation";
 
 const Main = () => {
     return (
-        <div className="w-full min-h-[100vh] text-center custom-bg flex items-center justify-center">
-            <div className="max-w-[1240px] w-full h-full mx-auto flex justify-center items-center">
-                <div className="mt-20 sm:mt-0 flex rounded-md bg-gray-900/90 px-10 py-6 sm:py-16 gap-10 flex-col items-center sm:flex-row sm:items-start">
-                    <Image className="rounded-md" src="/assets/profile.png" alt="Philip Nguyen Profile Picture" width={220} height={100}/>
-                    <div className="text-primary">
-                        <h1 className="text-2xl sm:text-5xl sm:py-4 text-accent">Philip Nguyen</h1>
-                        <h2 className="text-xl sm:text-3xl sm:py-4">Software Engineer</h2>
-                        <div className="flex items-center justify-between max-w-[330px] m-auto py-4 pt-8">
-                            <a
-                                href="https://www.linkedin.com/in/pncode"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-1.5 sm:p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                    <FaLinkedinIn size={24} color="black" />
-                                </div>
-                            </a>
-
-                            <a
-                                href="https://github.com/pn-code"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-1.5 sm:p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                    <FaGithub size={24} color="black" />
-                                </div>
-                            </a>
-
-                            <a
-                                href="mailto:philipnguyen953@gmail.com"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-1.5 sm:p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                    <AiOutlineMail size={24} color="black" />
-                                </div>
-                            </a>
-
-                            <a
-                                href="/assets/resume.pdf"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <div className="rounded-full shadow-lg bg-secondaryBtn shadow-gray-900 p-1.5 sm:p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-                                    <BsFillPersonLinesFill
-                                        size={24}
-                                        color="black"
-                                    />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div id="#" className="w-full min-h-[100vh] text-center flex items-center justify-center pt-28">
+            <div className="flex flex-col gap-2 sm:gap-4">
+                <h1 className="text-4xl sm:text-6xl font-bold">
+                    Philip Nguyen
+                </h1>
+                <h2 className="text-2xl sm:text-3xl text-gray-800 font-semibold">
+                    Software Engineer
+                </h2>
+                <span className="border-b-primaryBtn border-b-2 sm:border-b-4"></span>
+                <p className="text-gray-800 text-sm text-center">Passionate about writing software solutions that enrich lives and inspire lasting change.</p>
+                <WebAnimation/>
             </div>
         </div>
     );
