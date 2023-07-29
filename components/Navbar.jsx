@@ -12,10 +12,10 @@ const Navbar = () => {
                 </a>
 
                 <ul className="flex gap-4 text-primaryBtn">
-                    <li className="text-[14px] font-semibold">
+                    <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
                         <a href="/">Portfolio</a>
                     </li>
-                    <li className="text-[14px] font-semibold">
+                    <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
                         <a
                             href="/assets/resume.pdf"
                             target="_blank"
@@ -24,7 +24,7 @@ const Navbar = () => {
                             Resume
                         </a>
                     </li>
-                    <li className="text-[14px] font-semibold">
+                    <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
                         <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
