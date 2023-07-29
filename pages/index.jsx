@@ -46,7 +46,7 @@ export default function Home() {
             </Head>
             <Navbar />
 
-            <main className="px-4">
+            <main className="font-inter">
                 <Main />
                 <About />
                 <Projects />
