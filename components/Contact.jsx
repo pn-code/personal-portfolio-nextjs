@@ -63,7 +63,7 @@ const Contact = () => {
     return (
         <div
             id="contact"
-            className="w-full h-[calc(100vh-130px)] mt-28 sm:mx-[11%]"
+            className="w-full h-[calc(100vh-90px)] mt-28 sm:mx-[11%]"
         >
             <div className="max-w-[1240px] mx-auto flex flex-col h-full items-center">
                 <h1 className="text-xl text-primary font-bold sm:mb-4">
