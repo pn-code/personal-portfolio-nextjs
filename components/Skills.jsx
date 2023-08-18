@@ -1,30 +1,39 @@
 import SkillCard from "./SkillCard";
 
 const Skills = () => {
-  const frontEndSkills = [
-    "HTML",
-    "CSS",
+  const languages = [
+    "HTML5",
+    "CSS3",
     "JavaScript",
     "TypeScript",
-    "React.js",
-    "TailwindCSS",
-    "Next.js",
-    "Redux"
-  ];
-  const backEndSkills = [
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "PostgreSQL",
-    "Firebase",
+    "Python",
     "SQL"
   ];
+
+  const frameworks = [
+    "Node.js",
+    "Express.js",
+    "React.js",
+    "Next.js"
+  ]
+
+  const databases = [
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL"
+  ]
+
   const tools = [
     "Git",
-    "GitHub",
     "Postman",
     "Vercel",
+    "Firebase",
+    "Redux",
+    "Jest",
+    "Cypress",
+    "Tailwind"
   ];
+
   const otherSkills = ["REST API", "TRPC", "GraphQL", "AGILE/SCRUM"];
 
     return (
@@ -40,18 +49,27 @@ const Skills = () => {
                 {/* All Skills Section */}
                 <section className="flex flex-col gap-4 mt-5">
                     <section>
-                        <h3 className="text-lg mb-2">Frontend Skills</h3>
+                        <h3 className="text-lg mb-2">Programming Languages</h3>
                         <div className="flex gap-4 flex-wrap">
-                            {frontEndSkills.map((skill) => (
+                            {languages.map((skill) => (
                                 <SkillCard skillName={skill} key={skill} />
                             ))}
                         </div>
                     </section>
 
                     <section>
-                        <h3 className="text-lg mb-2">Backend Skills</h3>
+                        <h3 className="text-lg mb-2">Frameworks</h3>
                         <div className="flex gap-4 flex-wrap">
-                            {backEndSkills.map((skill) => (
+                            {frameworks.map((skill) => (
+                                <SkillCard skillName={skill} key={skill} />
+                            ))}
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 className="text-lg mb-2">Databases</h3>
+                        <div className="flex gap-4 flex-wrap">
+                            {databases.map((skill) => (
                                 <SkillCard skillName={skill} key={skill} />
                             ))}
                         </div>
