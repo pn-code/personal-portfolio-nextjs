@@ -9,11 +9,11 @@ const About = () => {
                     <span className="border-b-primaryBtn border-b-2 sm:border-b-4"></span>
 
                     <p className="text-sm sm:text-lg text-primary text-left rounded-md">
-                        I'm Philip Nguyen, a passionate Software Engineer
+                        I&apos;m Philip Nguyen, a passionate Software Engineer
                         with experience working on front-end and back-end
                         technologies. I enjoy designing and developing
                         high-quality software products that create a positive
-                        and lasting impact on people's lives.
+                        and lasting impact on people&apos;s lives.
                     </p>
                 </div>
             </div>
