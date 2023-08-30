@@ -8,14 +8,14 @@ const Navbar = () => {
                     className="text-xl font-semibold flex gap-4 items-center"
                     href="/"
                 >
-                    <h1 className="text-lg font-bold">Philip Nguyen</h1>
+                    <h1 className="text-lg sm:text-2xl font-bold">Philip Nguyen</h1>
                 </Link>
 
                 <ul className="flex gap-4 text-primaryBtn">
-                    <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
+                    <li className="text-[14px] sm:text-[16px] font-semibold hover:text-blue-300 ease-linear duration-200">
                         <Link href="/">Portfolio</Link>
                     </li>
-                    <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
+                    <li className="text-[14px] sm:text-[16px] font-semibold hover:text-blue-300 ease-linear duration-200">
                         <a
                             href="/assets/resume.pdf"
                             target="_blank"
@@ -24,7 +24,7 @@ const Navbar = () => {
                             Resume
                         </a>
                     </li>
-                    <li className="text-[14px] font-semibold hover:text-blue-300 ease-linear duration-200">
+                    <li className="text-[14px] sm:text-[16px] font-semibold hover:text-blue-300 ease-linear duration-200">
                         <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
