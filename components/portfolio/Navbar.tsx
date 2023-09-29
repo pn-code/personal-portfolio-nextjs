@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="fixed bg-background w-full flex flex-col md:flex-row md:px-[19%] justify-between items-center pb-2 md:pb-0 md:h-16 z-[100]">
+    <nav className="fixed bg-white dark:bg-slate-900 w-full flex flex-col md:flex-row md:px-[19%] justify-between items-center py-2 md:h-16 z-[100] shadow-sm">
       <Link className="w-full text-center md:text-left" href="/">
         <Button className="text-xl md:text-2xl font-bold" variant="ghost">
           Philip Nguyen
