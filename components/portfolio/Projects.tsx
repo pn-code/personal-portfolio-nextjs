@@ -35,9 +35,11 @@ const allProjects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full h-full sm:px-[20%] mb-44">
+    <div id="projects" className="w-full h-full sm:px-[20%] mb-10 pt-10">
       <div className="flex flex-col h-full">
-        <div className="w-full flex flex-col gap-12">
+        <h1 className="text-xl text-primary font-bold text-center mb-5">Projects</h1>
+        <span className="border-b-primaryBtn border-b-2 sm:border-b-4"></span>
+        <div className="w-full flex flex-col gap-12 mt-5">
           {allProjects.map((project) => (
             <ProjectCard
               key={project.id}
