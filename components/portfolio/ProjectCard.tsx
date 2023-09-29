@@ -35,7 +35,7 @@ export default function ProjectCard({
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
-      <CardContent className="w-full h-full flex flex-col md:flex-row justify-between items-center gap-4">
+      <CardContent className="w-full h-full flex flex-col xl:flex-row justify-between items-center gap-4">
         <Image src={imageSrc} alt={title} width={400} height={100} />
 
         <section className="w-full h-full flex flex-col gap-4 justify-between">
