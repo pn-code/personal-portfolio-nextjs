@@ -20,9 +20,8 @@ export default function RootLayout({
       <body className={karla.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+          defaultTheme="light"
+          enableSystem={false}
         >
           {children}
         </ThemeProvider>
