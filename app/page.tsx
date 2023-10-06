@@ -6,7 +6,7 @@ import Navbar from "@/components/portfolio/Navbar";
 
 export default function Home() {
   return (
-    <main className="w-full bg-slate-100 dark:bg-slate-900">
+    <main className="w-full bg-slate-50 dark:bg-slate-900">
       <Navbar />
       <Main />
       <About />

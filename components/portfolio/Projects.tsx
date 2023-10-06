@@ -41,11 +41,11 @@ const Projects = () => {
       className="w-full h-full sm:px-[20%] mb-10 pt-10 flex flex-col gap-4"
     >
       <div className="flex flex-col h-full">
-        <h1 className="text-xl text-primary font-bold text-center mb-5">
+        <h1 className="text-xl md:text-2xl text-primary font-bold text-center">
           Projects
         </h1>
-        <span className="border-b-primaryBtn border-b-2 sm:border-b-4"></span>
-        <div className="w-full flex flex-col gap-12 mt-5">
+
+        <div className="w-full flex flex-col gap-12 mt-4">
           {allProjects.map((project) => (
             <ProjectCard
               key={project.id}

@@ -30,7 +30,7 @@ export default function ProjectCard({
   imageSrc,
 }: ProjectCardProps) {
   return (
-    <Card>
+    <Card className="dark:bg-black/25">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>

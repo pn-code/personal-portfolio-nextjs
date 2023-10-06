@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="fixed bg-white dark:bg-slate-900 w-full flex flex-col md:flex-row md:px-[19%] justify-between items-center py-2 md:h-16 z-[100] shadow-sm">
-      <Link className="w-full text-center md:text-left" href="/">
-        <Button className="text-xl md:text-2xl font-bold" variant="ghost">
+    <nav className="fixed bg-slate-50 dark:bg-slate-900 w-full flex flex-col md:flex-row md:px-[19%] justify-between items-center py-2 md:h-16 z-[100]">
+      <a className="w-[220px]" href="/">
+        <Button className="w-full p-0 text-xl md:text-2xl font-bold" variant="ghost">
           Philip Nguyen
         </Button>
-      </Link>
+      </a>
 
       <ul className="w-full flex justify-center md:justify-end gap-1.5">
         <li>
