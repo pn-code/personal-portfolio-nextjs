@@ -1,3 +1,4 @@
+import { Button } from "../ui/button";
 import ProjectCard from "./ProjectCard";
 
 const allProjects = [
@@ -35,9 +36,14 @@ const allProjects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full h-full sm:px-[20%] mb-10 pt-10">
+    <div
+      id="projects"
+      className="w-full h-full sm:px-[20%] mb-10 pt-10 flex flex-col gap-4"
+    >
       <div className="flex flex-col h-full">
-        <h1 className="text-xl text-primary font-bold text-center mb-5">Projects</h1>
+        <h1 className="text-xl text-primary font-bold text-center mb-5">
+          Projects
+        </h1>
         <span className="border-b-primaryBtn border-b-2 sm:border-b-4"></span>
         <div className="w-full flex flex-col gap-12 mt-5">
           {allProjects.map((project) => (
@@ -52,6 +58,14 @@ const Projects = () => {
             />
           ))}
         </div>
+      </div>
+
+      <div className="w-full flex justify-end">
+        <Button>
+          <a href="https://github.com/pn-code" target="_blank" rel="noreferrer">
+            View Other Projects
+          </a>
+        </Button>
       </div>
     </div>
   );
