@@ -3,7 +3,17 @@ import ProjectCard from "./ProjectCard";
 
 const allProjects = [
   {
-    id: 1,
+    id: 4,
+    title: "Uncle Ben's",
+    githubLink: "https://github.com/pn-code/ecommerce",
+    demo: "https://shop.philipnguyen.dev/",
+    description:
+      "Uncle Ben's is an e-commerce web application featuring a variety of speciality meats. Featuring user authentication, shopping carts, Stripe integration, order tracking, and an admin application built underneath it all for the shop owner to track, create, update, and delete collections, products, billboards, and orders.",
+    skills: ["TypeScript", "React (Next.js)", "Node", "PostgreSQL"],
+    imageSrc: "/assets/projects/uncleben.jpg",
+  },
+  {
+    id: 3,
     title: "FitHeroes",
     githubLink: "https://github.com/pn-code/fitheroes",
     demo: "https://fitheroes.philipnguyen.dev",
@@ -23,7 +33,7 @@ const allProjects = [
     imageSrc: "/assets/projects/monsterburger.png",
   },
   {
-    id: 3,
+    id: 1,
     title: "Bug Tracker",
     githubLink: "https://github.com/pn-code/bug-tracker",
     demo: "https://bug-tracker-blue.vercel.app/",
