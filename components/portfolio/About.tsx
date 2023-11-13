@@ -11,7 +11,7 @@ const About = () => {
 
           <p className="text-sm sm:text-lg text-primary text-left rounded-md px-8 mt-4">
             I&apos;m{" "}
-            <span className="font-bold text-blue-600 dark:text-blue-400">
+            <span className="font-semibold text-blue-600 dark:text-blue-400">
               Philip Nguyen
             </span>
             , a Software Engineer passionate about crafting digital solutions.
@@ -20,18 +20,18 @@ const About = () => {
             <br />
             <br />
             My{" "}
-            <span className="text-indigo-600 dark:text-indigo-400">
+            <span className="text-blue-600 dark:text-blue-400 font-semibold">
               unwavering commitment to learning
             </span>{" "}
             drives me to continually explore new technologies and master
             existing tools. I believe in the power of{" "}
-            <span className="text-indigo-600 dark:text-indigo-400">
+            <span className="text-blue-600 dark:text-blue-400 font-semibold">
               diligence and attention to detail to deliver exceptional results
             </span>
             .
             <br />
             <br />
-            <Button className="text-blue-600 dark:text-blue-400 italic font-bold text-sm sm:text-lg justify-start text-left p-0" variant="link">
+            <Button className="text-amber-500 dark:text-amber-400 italic font-bold text-sm sm:text-lg justify-start text-left p-0" variant="link">
               <a href="#footer">
                 Let&apos;s collaborate and create something remarkable.
               </a>
