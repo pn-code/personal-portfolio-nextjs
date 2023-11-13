@@ -31,9 +31,9 @@ export default function ProjectCard({
     imageSrc,
 }: ProjectCardProps) {
     return (
-        <Card className="dark:bg-black/25 md:flex md:p-4 md:gap-4 w-full h-full">
+        <Card className="dark:bg-black/25 xl:flex lg:p-4 lg:gap-4 w-full h-full">
             {/* Image Container */}
-            <div className="relative w-full md:min-w-[500px] h-[380px]">
+            <div className="relative w-full lg:min-w-[500px] h-[380px]">
                 <Image
                     className="object-cover rounded-md"
                     src={imageSrc}
@@ -53,7 +53,7 @@ export default function ProjectCard({
                         <SkillList skills={skills} />
 
                         {/* Code Buttons */}
-                        <section className="flex gap-2 mb-2 w-full justify-between mt-4 md:mt-0 md:justify-end">
+                        <section className="flex gap-2 mb-2 w-full justify-between mt-4 lg:mt-0 lg:justify-end">
                             <a
                                 target="_blank"
                                 rel="noreferrer"
