@@ -7,7 +7,7 @@ const karla = Karla({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Philip Nguyen",
-  description: "Philip Nguyen, a Full Stack Developer",
+  description: "This is the personal portfolio of Philip Nguyen, a Software Engineer who specializes web development within the JavaScript/TypeScript environment.",
 };
 
 export default function RootLayout({
