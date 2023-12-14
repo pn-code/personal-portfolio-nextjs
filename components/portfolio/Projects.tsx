@@ -48,10 +48,10 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full h-full sm:px-[20%] mb-10 pt-10 flex flex-col gap-4"
+      className="w-full h-full sm:px-[20%] mb-10 pt-10 flex flex-col gap-4 mt-8"
     >
       <div className="flex flex-col h-full">
-        <h1 className="text-xl md:text-2xl text-primary font-bold text-center">
+        <h1 className="text-2xl md:text-4xl text-primary font-bold text-center tracking-tight">
           Projects
         </h1>
 
@@ -70,13 +70,13 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-end">
+      {/* <div className="w-full flex justify-center sm:justify-end">
         <Button>
           <a href="https://github.com/pn-code" target="_blank" rel="noreferrer">
             View Other Projects
           </a>
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 };

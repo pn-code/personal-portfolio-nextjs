@@ -5,14 +5,16 @@ import { Button } from "../ui/button";
 export default function Footer() {
   return (
     <footer id="footer" className="w-full h-full text-center">
-      <a href="#">
-        <Button className="h-12 w-12 mb-5 rounded-full p-1">
+      <Button className="h-12 w-12 mb-5 rounded-full p-1">
+        <a href="#">
           <ChevronsUp size={30} />
-        </Button>
-      </a>
+        </a>
+      </Button>
 
-      <h2>Contact Me</h2>
-      <div className="flex justify-center gap-4 max-w-[330px] m-auto pb-4 pt-4">
+      <span className="block text-sm text-slate-500 dark:text-slate-400">Scroll to the Top</span>
+
+      <h2 className="text-xl mt-10">Contact Me</h2>
+      <div className="flex justify-center gap-4 max-w-[330px] m-auto py-4">
         <a
           href="https://www.linkedin.com/in/pncode"
           target="_blank"

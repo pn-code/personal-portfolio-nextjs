@@ -2,14 +2,14 @@ import { Button } from "../ui/button";
 
 const About = () => {
   return (
-    <div id="about" className="w-full h-[calc(100vh-130px)] sm:px-[20%] px-4">
+    <div id="about" className="w-full h-[calc(100vh-130px)] sm:px-[20%] px-4 mt-8">
       <div className="max-w-[1240px] w-full h-full mx-auto flex">
         <div className="w-full flex flex-col gap-2 sm:gap-4 justify-center">
-          <h1 className="text-xl md:text-2xl text-primary font-bold text-center">
+          <h1 className="text-2xl md:text-4xl text-primary font-bold text-center tracking-tight">
             About Me
           </h1>
 
-          <p className="text-sm sm:text-lg text-primary text-left rounded-md px-8 mt-4">
+          <p className="text-lg text-primary text-left rounded-md px-4">
             I&apos;m{" "}
             <span className="font-semibold text-blue-600 dark:text-blue-400">
               Philip Nguyen
@@ -31,7 +31,7 @@ const About = () => {
             .
             <br />
             <br />
-            <Button className="text-amber-500 dark:text-amber-400 italic font-bold text-sm sm:text-lg justify-start text-left p-0" variant="link">
+            <Button className="text-amber-500 dark:text-amber-400 italic font-bold text-lg justify-start text-left p-0" variant="link">
               <a href="#footer">
                 Let&apos;s collaborate and create something remarkable.
               </a>
