@@ -14,7 +14,7 @@ const Main = () => {
                     Software Engineer
                 </h2>
                 <span className="border-b-primaryBtn border-b-2 sm:border-b-4"></span>
-                <p className="opacity-90 text-sm sm:text-[16px] text-center">
+                <p className="opacity-90 text-center">
                     Passionate about writing software solutions that enrich
                     lives and inspire lasting change.
                 </p>

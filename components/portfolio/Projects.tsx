@@ -48,11 +48,11 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full h-full sm:px-[20%] mb-10 pt-10 flex flex-col gap-4 mt-8"
+      className="w-full h-full sm:px-[20%] mb-10 pt-10 flex flex-col gap-4 mt-16"
     >
       <div className="flex flex-col h-full">
-        <h1 className="text-2xl md:text-4xl text-primary font-bold text-center tracking-tight">
-          Projects
+        <h1 className="text-4xl text-primary font-bold text-center tracking-tight mb-4">
+          My Projects
         </h1>
 
         <div className="w-full flex flex-col gap-12 mt-4">

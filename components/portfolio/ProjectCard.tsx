@@ -45,7 +45,7 @@ export default function ProjectCard({
             <div className="flex flex-col gap-4">
                 <CardHeader className="space-y-4">
                     <CardTitle>{title}</CardTitle>
-                    <CardDescription>{description}</CardDescription>
+                    <CardDescription className="text-[16px]">{description}</CardDescription>
                 </CardHeader>
 
                 <CardContent className="w-full h-full flex flex-col xl:flex-row justify-between items-center gap-4">
