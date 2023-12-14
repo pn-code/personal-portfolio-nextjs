@@ -4,7 +4,7 @@ const Main = () => {
     return (
         <div
             id="#"
-            className="px-4 w-full min-h-[100vh] text-center flex items-center justify-center pt-32 animate-fadeIn"
+            className="px-4 w-full min-h-[100vh] h-full text-center flex items-center justify-center pt-32 animate-fadeIn"
         >
             <div className="flex flex-col gap-2 sm:gap-4">
                 <h1 className="text-5xl sm:text-6xl font-bold tracking-tighter">
