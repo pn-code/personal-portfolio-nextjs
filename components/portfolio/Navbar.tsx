@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="fixed bg-slate-50 dark:bg-slate-900 w-full flex flex-col md:flex-row md:px-[19%] justify-between items-center py-2 md:h-16 z-[100]">
       <a className="w-[220px]" href="/">
-        <Button className="w-full p-0 text-xl md:text-2xl font-bold" variant="ghost">
+        <Button className="hidden sm:flex w-full p-0 text-xl md:text-2xl font-bold" variant="ghost">
           Philip Nguyen
         </Button>
       </a>
