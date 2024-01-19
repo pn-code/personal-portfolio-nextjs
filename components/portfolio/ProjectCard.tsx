@@ -4,11 +4,9 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "../ui/card";
-import SkillCard from "./SkillCard";
 
 import { Code, Rocket } from "lucide-react";
 import SkillList from "./SkillList";
@@ -20,6 +18,7 @@ interface ProjectCardProps {
     description: string;
     skills: string[];
     imageSrc: string;
+    role: string;
 }
 
 export default function ProjectCard({
@@ -29,13 +28,14 @@ export default function ProjectCard({
     description,
     skills,
     imageSrc,
+    role,
 }: ProjectCardProps) {
     return (
-        <Card className="dark:bg-black/25 xl:flex lg:p-4 lg:gap-4 w-full h-full">
+        <Card className="dark:bg-black/25 xl:flex lg:p-4 lg:gap-4 w-full h-full rounded-none md:rounded-md">
             {/* Image Container */}
-            <div className="relative w-full lg:min-w-[500px] h-[380px]">
+            <div className="relative w-full lg:min-w-[750px] h-[300px] md:h-[520px]">
                 <Image
-                    className="object-cover rounded-md"
+                    className="object-cover md:rounded-md"
                     src={imageSrc}
                     alt={title}
                     fill
@@ -44,8 +44,22 @@ export default function ProjectCard({
 
             <div className="flex flex-col gap-4">
                 <CardHeader className="space-y-4">
-                    <CardTitle>{title}</CardTitle>
-                    <CardDescription className="text-[16px]">{description}</CardDescription>
+                    <CardTitle className="text-3xl md:text-4xl">
+                        {title}
+                    </CardTitle>
+                    <div className="tracking-tight">
+                        <h3 className="text-[18px] font-bold text-primary">
+                            Role:
+                        </h3>
+                        <p className="text-slate-600 font-[16px]">{role}</p>
+                    </div>
+
+                    <CardDescription className="text-[16px] tracking-tight">
+                        <h3 className="text-[18px] font-bold text-primary">
+                            Highlights:
+                        </h3>
+                        <p className="text-slate-600 font-[16px]">{description}</p>
+                    </CardDescription>
                 </CardHeader>
 
                 <CardContent className="w-full h-full flex flex-col xl:flex-row justify-between items-center gap-4">
