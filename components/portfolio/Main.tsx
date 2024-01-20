@@ -12,7 +12,7 @@ const Main = () => {
                     Transform your vision into reality
                 </h1>
                 <h2 className="text-lg md:text-2xl tracking-tighter text-slate-600">
-                    Creating software solutions that intrigues and inspires.
+                    {/* Creating software solutions that intrigues and inspires. */}
                     Fast and meticulous learner who strives for continuous
                     improvement. Let&apos;s connect and work together on your
                     next project!
